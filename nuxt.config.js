@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'open-day-ctm-2022',
+    title: 'Open Day CTM 2022',
     htmlAttrs: {
       lang: 'en',
     },

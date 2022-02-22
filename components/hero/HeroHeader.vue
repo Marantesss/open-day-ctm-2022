@@ -4,7 +4,7 @@
     <header id="up" class="bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
 		<!-- Overlay Background + Center Control -->
 		<div class="h-screen bg-opacity-50 bg-black flex items-center" style="background:rgba(0,0,0,0.2);">
-			<div class="mx-2 text-center container mx-auto">
+			<div class="text-center container mx-auto">
 				<h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl text-left">
 					Challenge Something
         </h1>
