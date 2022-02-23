@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-white flex flex-col gap-12">
     <HeroHeader />
     <AboutUs />
     <SpeakerSection />

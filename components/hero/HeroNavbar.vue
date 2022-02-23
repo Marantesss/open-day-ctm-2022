@@ -11,7 +11,8 @@
       top-0
       z-20
       fixed
-      
+      transform
+      duration-200
     "
   >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
