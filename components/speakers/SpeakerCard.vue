@@ -1,47 +1,73 @@
 <template>
-  <div class="bg-blue-600 flex flex-col justify-center items-center mt-16 rounded-md">
-      <img :src="img" class="rounded-full h-32 w-32 object-cover -m-16" />
-      <div class="text-white text-center mt-16 p-2">
-        <h2 v-text="name" class="text-2xl font-bold"></h2>
-        <h4 v-text="title" class="text-l"></h4>
-        <p v-text="bio" class="font-light"></p>
-        <div class="flex justify-around">
-            <span v-for="social in socials" :key="social.name">
-                {{ social.name }}
-            </span>
-        </div>
+  <div
+    class="
+      bg-ctm-dark-blue
+      flex flex-col
+      justify-center
+      items-center
+      mt-16
+      rounded-md
+    "
+  >
+    <img :src="img" class="rounded-full h-32 w-32 object-cover -m-16" />
+    <div class="text-white text-center mt-16 px-6 pb-6">
+      <h2 v-text="name" class="text-2xl font-title"></h2>
+      <h4 v-text="title" class="text-base"></h4>
+      <p v-text="bio" class="font-lt text-sm"></p>
+      <div class="flex justify-center mt-4">
+        <span v-for="{ name, url } in socials" :key="name" class="mx-3">
+          <a v-if="name === 'twitter'" :href="url" target="_blank">
+            <TwitterIcon />
+          </a>
+          <a v-if="name === 'linkedin'" :href="url" target="_blank">
+            <LinkedInIcon />
+          </a>
+          <a v-if="name === 'website'" :href="url" target="_blank">
+            <WebIcon />
+          </a>
+        </span>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
+import LinkedInIcon from '../icons/LinkedInIcon'
+import TwitterIcon from '../icons/TwitterIcon'
+import WebIcon from '../icons/WebIcon'
+
 export default {
-    name: 'SpeakerCard',
-    props: {
-        name: {
-            type: String,
-            required: true
-        },
-        title: {
-            type: String,
-            required: true
-        },
-        img: {
-            type: String,
-            required: true
-        },
-        bio: {
-            type: String,
-            required: true
-        },
-        socials: {
-            type: Array,
-            default: () => []
-        }
-    }
+  name: 'SpeakerCard',
+  components: {
+    TwitterIcon,
+    LinkedInIcon,
+    WebIcon
+  },
+
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    img: {
+      type: String,
+      required: true,
+    },
+    bio: {
+      type: String,
+      required: true,
+    },
+    socials: {
+      type: Array,
+      default: () => [],
+    },
+  },
 }
 </script>
 
 <style>
-
 </style>

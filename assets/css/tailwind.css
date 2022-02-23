@@ -5,3 +5,25 @@
 html {
   overflow-y: scroll;
 }
+
+@layer base {
+  @font-face {
+    font-family: "Decima Mono Pro";
+    src: url('/fonts/DecimaMonoPro.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: "Decima Mono Pro Bold";
+    src: url('/fonts/DecimaMonoPro-Bold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: "Decima Mono Pro Light";
+    src: url('/fonts/DecimaMonoPro-Light.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: "Do4";
+    src: url('/fonts/Do4BrainBold.ttf') format('truetype');
+  }
+}
