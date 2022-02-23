@@ -1,5 +1,6 @@
 <template>
   <nav
+    :class="{ 'bg-white shadow-md': !atTopOfPage }"
     class="
       px-2
       sm:px-4
@@ -8,8 +9,9 @@
       dark:bg-gray-800
       inset-x-0
       top-0
-      z-10
+      z-20
       fixed
+      
     "
   >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
@@ -68,9 +70,9 @@
             md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium
           "
         >
-          <li v-for="section in sections" :key="section.name">
+          <li v-for="{ ref, name } in sections" :key="name">
             <a
-              :href="section.ref"
+              :href="ref"
               class="
                 block
                 py-2
@@ -90,7 +92,7 @@
                 dark:border-gray-700
               "
               aria-current="page"
-              v-text="section.name"
+              v-text="name"
             ></a>
           </li>
         </ul>
@@ -105,6 +107,7 @@ export default {
 
   data() {
     return {
+      atTopOfPage: true,
       sections: [
         {
           name: '/about',
@@ -132,6 +135,25 @@ export default {
         },
       ],
     }
+  },
+
+  // a beforeMount call to add a listener to the window
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+
+  methods: {
+    // the function to call when the user scrolls, added as a method
+    handleScroll() {
+      // when the user scrolls, check the pageYOffset
+      if (window.scrollY > 0) 
+      {
+        if(this.atTopOfPage)
+          this.atTopOfPage = false
+      } else if (!this.atTopOfPage) {
+        this.atTopOfPage = true
+      }
+    },
   },
 }
 </script>
