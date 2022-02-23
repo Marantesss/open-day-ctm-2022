@@ -18,6 +18,9 @@ module.exports = {
         'ctm-light-blue': '#EEF8FB',
         'ctm-grey': '#999999',
       },
+      width: {
+        hero: '128rem',
+      }
     },
   },
   variants: {

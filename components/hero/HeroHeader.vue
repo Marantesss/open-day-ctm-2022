@@ -1,20 +1,61 @@
 <template>
   <div>
     <HeroNavbar />
-    <header id="up" class="bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
-		<!-- Overlay Background + Center Control -->
-		<div class="h-screen bg-opacity-50 bg-black flex items-center" style="background:rgba(0,0,0,0.2);">
-			<div class="text-center container mx-auto">
-				<h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl text-left">
-					Challenge Something
-        </h1>
-        <img class="h-32" src="images/logo.png" />
-        <h2 class="text-gray-200 font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight text-right">
-          Bold Action Statement
-        </h2>
-        <div>
-          <button class="bg-black text-white rounded-full text-2xl py-2 px-4">Register Here</button>
-        </div>
+    <header
+      id="up"
+      class="bg-fixed bg-no-repeat bg-center bg-cover h-screen relative"
+    >
+      <div
+        class="
+          absolute
+          flex
+          items-center
+          justify-between
+          h-full
+          w-full
+          overflow-hidden
+          z-0
+        "
+      >
+        <HeroBubbles class="xl:ml-12 sm:mx-2 w-hero sm:w-auto" />
+        <HeroNetwork class="hidden xl:block left-8" />
+      </div>
+      <!-- Overlay Background + Center Control -->
+      <div class="absolute h-full w-full flex items-center">
+        <div class="container mx-auto lg:px-12">
+          <h1
+            class="
+              text-black
+              font-title
+              text-2xl
+              xs:text-4xl
+              md:text-5xl
+              text-left
+            "
+          >
+            Challenge Something
+          </h1>
+          <OpenDayCTMLogo
+            class="max-h-32 my-10 w-48 mx-auto sm:mx-0 sm:w-auto"
+          />
+          <h2
+            class="
+              text-black
+              font-title
+              text-2xl
+              xs:text-4xl
+              md:text-5xl
+              leading-tight
+              text-right
+            "
+          >
+            Bold Action Statement
+          </h2>
+          <div class="text-center">
+            <button class="bg-black border-2 border-black text-white rounded-full text-2xl py-2 px-4 hover:text-ctm-dark-blue hover:bg-white hover:border-ctm-dark-blue transform transition-all duration-200">
+              Register Here
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -22,13 +63,18 @@
 </template>
 
 <script>
-import HeroNavbar from './HeroNavbar.vue'
+import HeroNavbar from './HeroNavbar'
+import HeroBubbles from './HeroBubbles'
+import HeroNetwork from './HeroNetwork.vue'
 export default {
   name: 'HeroHeader',
-  components: { HeroNavbar },
+  components: {
+    HeroNavbar,
+    HeroBubbles,
+    HeroNetwork,
+  },
 }
 </script>
 
 <style>
-
 </style>

@@ -14,7 +14,7 @@
   >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="#" class="flex">
-        <OpenDayCTMLogo class="h-12 w-32" />
+        <OpenDayCTMLogo color="black" class="h-12 w-32" />
       </a>
       <button
         data-collapse-toggle="mobile-menu"
