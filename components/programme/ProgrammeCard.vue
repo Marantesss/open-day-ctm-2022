@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center text-left">
-    <span v-text="time" class="mt-2 text-lg text-ctm-dark-blue font-bold"></span>
+    <span class="mt-2 text-lg text-ctm-dark-blue font-title" v-text="time"></span>
     <span class="rounded-full bg-gradient-to-b from-ctm-gradient-light-blue to-ctm-dark-blue bg h-8 w-8 -mr-4 mt-2 ml-2 z-10"></span>
     <div
       class="p-2 flex-grow rounded-md pl-6"
@@ -11,7 +11,7 @@
       }"
     >
       <div class="flex justify-between">
-        <h2 v-text="name" class="text-2xl font-title"></h2>
+        <h2 class="text-2xl font-title" v-text="name"></h2>
         <div class="flex">
           <img
             v-for="{ photo } in speakers"
@@ -22,8 +22,8 @@
           />
         </div>
       </div>
-      <p v-text="place" class="font-base"></p>
-      <p v-for="{ name } in speakers" :key="name" v-text="name" class="font-lt text-sm"></p>
+      <p class="font-base" v-text="place"></p>
+      <p v-for="speaker in speakers" :key="speaker.name" class="font-lt text-sm" v-text="speaker.name"></p>
     </div>
   </div>
 </template>

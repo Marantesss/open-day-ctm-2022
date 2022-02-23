@@ -84,7 +84,7 @@
                 hover:bg-gray-50
                 md:hover:bg-transparent
                 md:border-0
-                md:hover:text-blue-700
+                md:hover:text-ctm-dark-blue
                 md:p-0
                 dark:text-gray-400
                 md:dark:hover:text-white
@@ -147,10 +147,8 @@ export default {
     // the function to call when the user scrolls, added as a method
     handleScroll() {
       // when the user scrolls, check the pageYOffset
-      if (window.scrollY > 0) 
-      {
-        if(this.atTopOfPage)
-          this.atTopOfPage = false
+      if (window.scrollY > 0) {
+        if (this.atTopOfPage) this.atTopOfPage = false
       } else if (!this.atTopOfPage) {
         this.atTopOfPage = true
       }
