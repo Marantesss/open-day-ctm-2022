@@ -38,6 +38,19 @@
           <OpenDayCTMLogo
             class="max-h-32 my-10 w-48 mx-auto sm:mx-0 sm:w-auto"
           />
+          <h3
+            class="
+              text-black
+              font-title
+              text-lg
+              xs:text-2xl
+              md:text-3xl
+              leading-tight
+              text-left
+            "
+          >
+            March 31st & April 1st
+          </h3>
           <h2
             class="
               text-black
@@ -52,7 +65,23 @@
             Bold Action Statement
           </h2>
           <div class="text-center">
-            <button class="bg-black border-2 border-black text-white rounded-full text-2xl py-2 px-4 hover:text-ctm-dark-blue hover:bg-white hover:border-ctm-dark-blue transform transition-all duration-200">
+            <button
+              class="
+                bg-black
+                border-2 border-black
+                text-white
+                rounded-full
+                text-2xl
+                py-2
+                px-4
+                hover:text-ctm-dark-blue
+                hover:bg-white
+                hover:border-ctm-dark-blue
+                transform
+                transition-all
+                duration-200
+              "
+            >
               Register Here
             </button>
           </div>

@@ -75,7 +75,8 @@ export default {
     },
     place: {
       type: String,
-      required: true,
+      required: false,
+      default: undefined
     },
     speakers: {
       type: Array,
