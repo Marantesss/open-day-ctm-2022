@@ -11,10 +11,16 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'The Center for Telecommunications and Multimedia (CTM) is one of INESC TEC’s many research centers. This event, the CTM Open Day aims to showcase the variety and quality of the technical and scientific work undertaken by CTM and its collaborators.' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'msapplication-TileColor', content: '#da532c' },
+      { name: 'theme-color', content: '#ffffff' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'manifest', href: '/site.webmanifest' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
