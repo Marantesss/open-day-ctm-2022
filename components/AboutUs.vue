@@ -1,23 +1,31 @@
 <template>
-  <div class="container text-ctm-dark-blue mx-auto my-6">
-    <h1 class="text-4xl uppercase mb-4 font-section-title">/About Us</h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis repellat
-      asperiores doloribus fugit architecto illum, delectus pariatur sunt,
-      officiis a quos odit animi dolor numquam. Quae ipsum possimus tempora
-      nemo!
+  <div id="about_us" class="container text-ctm-dark-blue mx-auto my-6 px-2">
+    <h1 class="text-4xl uppercase mb-4 font-section-title">/about_us</h1>
+    <p class="mb-2">
+      The Center for Telecommunications and Multimedia (CTM) is one of INESC
+      TEC’s many research centers. This event, the
+      <span class="underline font-title">CTM Open Day</span> aims to showcase
+      the variety and quality of the technical and scientific work undertaken by
+      CTM and its collaborators.
     </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis repellat
-      asperiores doloribus fugit architecto illum, delectus pariatur sunt,
-      officiis a quos odit animi dolor numquam. Quae ipsum possimus tempora
-      nemo!
+    <p class="mb-2">
+      This year, CTM is designing the event for you, the students! Throughout
+      <span class="underline font-title">two full days</span> you’ll have the
+      opportunity to attend four keynote speakers who are senior members of CTMs
+      four scientific areas: Computer Vision and Machine Learning, Multimedia
+      and Communications, Optical and Electrical Technologies, and Wireless
+      Communications.
     </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis repellat
-      asperiores doloribus fugit architecto illum, delectus pariatur sunt,
-      officiis a quos odit animi dolor numquam. Quae ipsum possimus tempora
-      nemo!
+    <p class="mb-2">
+      But the main events are the several workshops our researchers and doctoral
+      students have prepared for you! A total of five workshops, of 2 hours
+      each, that we invite you to attend to learn what CTM does
+      <span class="underline font-title">hands-on</span>.
+    </p>
+    <p class="mb-2">
+      The event is <span class="underline font-title">free of charge</span>, but
+      registration is mandatory, so stay tuned for any updates to the program
+      and for the opening of the registration.
     </p>
   </div>
 </template>

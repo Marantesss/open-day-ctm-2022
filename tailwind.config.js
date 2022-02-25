@@ -26,5 +26,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    // line clamping classes
+    require('@tailwindcss/line-clamp'),
+  ],
 }

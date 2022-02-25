@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto my-6">
+  <div id="partners" class="container mx-auto my-6 px-2">
     <h1 class="text-4xl uppercase mb-4 text-ctm-dark-blue font-section-title">
       /partners
     </h1>

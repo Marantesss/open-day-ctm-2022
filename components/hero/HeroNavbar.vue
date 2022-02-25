@@ -71,31 +71,32 @@
             md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium
           "
         >
-          <li v-for="{ ref, name } in sections" :key="name">
-            <a
-              :href="ref"
-              class="
-                block
-                py-2
-                pr-4
-                pl-3
-                text-gray-700
-                border-b border-gray-100
-                hover:bg-gray-50
-                md:hover:bg-transparent
-                md:border-0
-                md:hover:text-ctm-dark-blue
-                md:p-0
-                dark:text-gray-400
-                md:dark:hover:text-white
-                dark:hover:bg-gray-700 dark:hover:text-white
-                md:dark:hover:bg-transparent
-                dark:border-gray-700
-              "
-              aria-current="page"
-              v-text="name"
-            ></a>
-          </li>
+          <li
+            v-for="{ onClick, name } in sections"
+            :key="name"
+            @click="onClick"
+            class="
+              cursor-pointer
+              block
+              py-2
+              pr-4
+              pl-3
+              text-gray-700
+              border-b border-gray-100
+              hover:bg-gray-50
+              md:hover:bg-transparent
+              md:border-0
+              md:hover:text-ctm-dark-blue
+              md:p-0
+              dark:text-gray-400
+              md:dark:hover:text-white
+              dark:hover:bg-gray-700 dark:hover:text-white
+              md:dark:hover:bg-transparent
+              dark:border-gray-700
+            "
+            aria-current="page"
+            v-text="name"
+          ></li>
         </ul>
       </div>
     </div>
@@ -111,28 +112,28 @@ export default {
       atTopOfPage: true,
       sections: [
         {
-          name: '/about',
-          ref: '#',
+          name: '/about_us',
+          onClick: this.createScroll('about_us'),
         },
         {
-          name: '/workshops',
-          ref: '#',
+          name: '/speakers',
+          onClick: this.createScroll('speakers'),
+        },
+        {
+          name: '/programme',
+          onClick: this.createScroll('programme'),
         },
         {
           name: '/organisation',
-          ref: '#',
+          onClick:this.createScroll('organisation'),
         },
         {
           name: '/past_editions',
-          ref: '#',
+          onClick: this.createScroll('past_editions'),
         },
         {
           name: '/partners',
-          ref: '#',
-        },
-        {
-          name: '/registration',
-          ref: '#',
+          onClick: this.createScroll('partners'),
         },
       ],
     }
@@ -152,6 +153,12 @@ export default {
       } else if (!this.atTopOfPage) {
         this.atTopOfPage = true
       }
+    },
+    createScroll(elementId) {
+      return () =>
+        document
+          .getElementById(elementId)
+          .scrollIntoView({ behavior: 'smooth' })
     },
   },
 }

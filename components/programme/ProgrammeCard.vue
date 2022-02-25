@@ -1,29 +1,58 @@
 <template>
   <div class="flex justify-center text-left">
-    <span class="mt-2 text-lg text-ctm-dark-blue font-title" v-text="time"></span>
-    <span class="rounded-full bg-gradient-to-b from-ctm-gradient-light-blue to-ctm-dark-blue bg h-8 w-8 -mr-4 mt-2 ml-2 z-10"></span>
+    <span
+      class="mt-2 text-lg text-ctm-dark-blue font-title"
+      v-text="time"
+    ></span>
+    <span
+      class="
+        rounded-full
+        bg-gradient-to-b
+        from-ctm-gradient-light-blue
+        to-ctm-dark-blue
+        bg
+        h-8
+        w-8
+        -mr-4
+        mt-2
+        ml-2
+        z-10
+      "
+    ></span>
     <div
       class="p-2 flex-grow rounded-md pl-6"
       :class="{
-        'bg-ctm-light-blue text-ctm-dark-blue': name !== 'Coffee Break',
+        'bg-ctm-light-blue text-ctm-dark-blue':
+          name !== 'Coffee Break' && name !== 'Lunch Break',
         'bg-white text-ctm-dark-blue border-2 border-ctm-dark-blue':
-          name === 'Coffee Break',
+          name === 'Coffee Break' || name === 'Lunch Break',
       }"
     >
       <div class="flex justify-between">
-        <h2 class="text-2xl font-title" v-text="name"></h2>
-        <div class="flex">
-          <img
-            v-for="{ photo } in speakers"
-            :key="photo"
-            :class="speakers.length !== 1 ? '-ml-4' : ''"
-            class="h-8 w-8 rounded-full object-cover border-2 border-ctm-light-blue"
-            :src="`images/speakers/${photo}`"
-          />
+        <div class="flex-grow">
+          <h2 class="text-lg font-title" v-text="name"></h2>
+          <p class="font-base" v-text="place"></p>
+          <p
+            v-for="speaker in speakers"
+            :key="speaker.name"
+            class="font-lt text-sm"
+            v-text="speaker.name"
+          ></p>
         </div>
+        <img
+          v-for="{ photo } in speakers"
+          :key="photo"
+          :class="speakers.length !== 1 ? '-ml-4' : ''"
+          class="
+            h-8
+            w-8
+            rounded-full
+            object-cover
+            border-2 border-ctm-light-blue
+          "
+          :src="`images/speakers/${photo}`"
+        />
       </div>
-      <p class="font-base" v-text="place"></p>
-      <p v-for="speaker in speakers" :key="speaker.name" class="font-lt text-sm" v-text="speaker.name"></p>
     </div>
   </div>
 </template>
@@ -51,7 +80,7 @@ export default {
     speakers: {
       type: Array,
       required: false,
-      default: () => []
+      default: () => [],
     },
   },
 }

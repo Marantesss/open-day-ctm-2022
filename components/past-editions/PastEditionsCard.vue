@@ -1,5 +1,8 @@
 <template>
   <a
+    @mouseenter="toggleMouseOver"
+    @mouseleave="toggleMouseOver"
+    target="_blank"
     :href="url"
     class="
       grid grid-cols-2
@@ -12,8 +15,12 @@
       overflow-hidden
     "
   >
-    <img :src="img" class="w-full h-full object-cover" />
-    <h3 v-text="year" class="text-2xl text-ctm-dark-blue" />
+    <img
+      :src="img"
+      :class="{ 'scale-125': isMouseOver }"
+      class="w-full h-full object-cover transform duration-200"
+    />
+    <h3 v-text="year" :class="{ 'underline font-bold': isMouseOver }" class="text-2xl text-ctm-dark-blue transform duration-200" />
   </a>
 </template>
 
@@ -32,6 +39,16 @@ export default {
     img: {
       type: String,
       required: true,
+    },
+  },
+
+  data: () => ({
+    isMouseOver: false,
+  }),
+
+  methods: {
+    toggleMouseOver() {
+      this.isMouseOver = !this.isMouseOver
     },
   },
 }
