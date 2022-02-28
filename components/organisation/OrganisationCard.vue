@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col justify-center items-center">
-    <img v-if="img" :src="`images/speakers/${img}`" class="rounded-full h-32 w-32 object-cover" />
+    <img v-if="img" :src="`images/organisation/${img}`" class="rounded-full h-32 w-32 object-cover" />
     <div class="text-ctm-dark-blue text-center p-2">
       <h2 v-text="name" class="text-base"></h2>
       <h4 v-text="title" class="text-sm"></h4>

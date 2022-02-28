@@ -1,7 +1,7 @@
 <template>
   <div id="organisation" class="container mx-auto my-6 px-2">
     <h1 class="text-4xl uppercase mb-4 text-ctm-dark-blue font-section-title">/Organisation</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 items-start">
       <OrganisationCard
         v-for="{ name, title, cargo, img } in organisation"
         :key="name"
@@ -24,58 +24,47 @@ export default {
       organisation: [
         {
           name: 'Nuno Paulino',
-          title: 'Researcher @ INESC TEC',
-          cargo: 'General Chair',
-          img: 'nuno.jpg',
+          cargo: 'Chairperson',
+          img: 'nuno-paulino.png',
         },
         {
-          name: 'Nuno Paulino 2',
+          name: 'Guilherme Carvalho',
           title: 'Researcher @ INESC TEC',
-          cargo: 'General Chair',
-          img: 'nuno.jpg',
+          cargo: 'Optical and Electronic Technologies',
+          img: 'guilherme-carvalho.png',
         },
         {
-          name: 'Nuno Paulino 3',
+          name: 'André Coelho',
           title: 'Researcher @ INESC TEC',
-          cargo: 'General Chair',
-          img: 'nuno.jpg',
+          cargo: 'Wireless Networks',
+          img: 'andre-coelho.png',
         },
         {
-          name: 'Nuno Paulino 4',
+          name: 'Ana Filipa',
           title: 'Researcher @ INESC TEC',
-          cargo: 'General Chair',
-          img: 'nuno.jpg',
+          cargo: 'Visual Computing & Machine Intelligence',
+          img: 'ana-filipa.png',
         },
         {
-          name: 'Nuno Paulino 5',
+          name: 'Luís Aly',
           title: 'Researcher @ INESC TEC',
-          cargo: 'General Chair',
-          img: 'nuno.jpg',
+          cargo: 'Multimedia Communications Technologies',
+          img: 'luis-aly.png',
         },
         {
           name: 'Gonçalo Marantes',
-          title: 'Student @ FEUP',
+          title: 'Member @ IEEE UP SB',
           cargo: 'Webmaster',
         },
         {
-          name: 'Gonçalo Marantes 2',
-          title: 'Student @ FEUP',
-          cargo: 'Webmaster',
+          name: 'Rita Costa',
+          title: 'Designer @ SCOM',
+          cargo: 'Communication and Design',
         },
         {
-          name: 'Gonçalo Marantes 3',
-          title: 'Student @ FEUP',
-          cargo: 'Webmaster',
-        },
-        {
-          name: 'Gonçalo Marantes 4',
-          title: 'Student @ FEUP',
-          cargo: 'Webmaster',
-        },
-        {
-          name: 'Gonçalo Marantes 5',
-          title: 'Student @ FEUP',
-          cargo: 'Webmaster',
+          name: 'Camila Aldrighi',
+          title: 'Designer @ SCOM',
+          cargo: 'Communication and Design',
         },
       ],
     }
