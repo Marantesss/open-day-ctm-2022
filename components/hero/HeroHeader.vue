@@ -33,7 +33,7 @@
               text-left
             "
           >
-            Challenge Something
+            Challenge Yourself
           </h1>
           <OpenDayCTMLogo
             class="max-h-32 my-10 w-48 mx-auto sm:mx-0 sm:w-auto"
@@ -62,11 +62,14 @@
               text-right
             "
           >
-            Bold Action Statement
+            Learn from Experts
           </h2>
           <div class="text-center">
-            <button
+            <a
+              href="https://forms.gle/gD84wUa2otx8tMX96"
+              target="_blank"
               class="
+                cursor-pointer
                 bg-black
                 border-2 border-black
                 text-white
@@ -83,7 +86,7 @@
               "
             >
               Register Here
-            </button>
+            </a>
           </div>
         </div>
       </div>
