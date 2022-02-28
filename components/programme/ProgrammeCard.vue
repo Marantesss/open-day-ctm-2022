@@ -1,26 +1,26 @@
 <template>
   <div class="flex justify-center text-left">
-    <span
-      class="mt-2 text-lg text-ctm-dark-blue font-title"
-      v-text="time"
-    ></span>
-    <span
-      class="
-        rounded-full
-        bg-gradient-to-b
-        from-ctm-gradient-light-blue
-        to-ctm-dark-blue
-        bg
-        h-8
-        w-8
-        -mr-4
-        mt-2
-        ml-2
-        z-10
-      "
-    ></span>
+    <span class="mt-2 flex">
+      <span
+        class="mr-2 text-lg text-ctm-dark-blue font-title"
+        v-text="time"
+      ></span>
+      <span
+        class="
+          rounded-full
+          bg-gradient-to-b
+          from-ctm-gradient-light-blue
+          to-ctm-dark-blue
+          bg
+          h-8
+          w-8
+          -mr-4
+          z-10
+        "
+      ></span>
+    </span>
     <div
-      class="p-2 flex-grow rounded-md pl-6"
+      class="p-2 w-full rounded-md pl-6"
       :class="{
         'bg-ctm-light-blue text-ctm-dark-blue':
           name !== 'Coffee Break' && name !== 'Lunch Break',
@@ -76,7 +76,7 @@ export default {
     place: {
       type: String,
       required: false,
-      default: undefined
+      default: undefined,
     },
     speakers: {
       type: Array,

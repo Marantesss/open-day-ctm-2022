@@ -24,30 +24,31 @@ export default {
       organisation: [
         {
           name: 'Nuno Paulino',
+          title: 'INESC TEC',
           cargo: 'Chairperson',
           img: 'nuno-paulino.png',
         },
         {
           name: 'Guilherme Carvalho',
-          title: 'Researcher @ INESC TEC',
+          title: 'INESC TEC',
           cargo: 'Optical and Electronic Technologies',
           img: 'guilherme-carvalho.png',
         },
         {
           name: 'André Coelho',
-          title: 'Researcher @ INESC TEC',
+          title: 'INESC TEC',
           cargo: 'Wireless Networks',
           img: 'andre-coelho.png',
         },
         {
           name: 'Ana Filipa',
-          title: 'Researcher @ INESC TEC',
+          title: 'INESC TEC',
           cargo: 'Visual Computing & Machine Intelligence',
           img: 'ana-filipa.png',
         },
         {
           name: 'Luís Aly',
-          title: 'Researcher @ INESC TEC',
+          title: 'INESC TEC',
           cargo: 'Multimedia Communications Technologies',
           img: 'luis-aly.png',
         },

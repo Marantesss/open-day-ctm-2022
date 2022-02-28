@@ -116,7 +116,7 @@ export default {
             },
             {
               name: 'Daniel Granhão',
-              photo: 'nuno.jpg',
+              photo: 'daniel-granhao.png',
             },
           ],
         },
@@ -158,7 +158,7 @@ export default {
           speakers: [
             {
               name: 'André Coelho',
-              photo: 'nuno.jpg',
+              photo: 'andre-coelho.png',
             },
           ],
         },
@@ -188,7 +188,7 @@ export default {
           speakers: [
             {
               name: 'André Coelho',
-              photo: 'nuno.jpg',
+              photo: 'andre-coelho.png',
             },
           ],
         },
@@ -237,7 +237,7 @@ export default {
           speakers: [
             {
               name: 'Sofia Inácio',
-              photo: 'nuno.jpg',
+              photo: 'sofia-inacio.jpg',
             },
             {
               name: 'Joana Tavares',

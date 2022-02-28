@@ -38,7 +38,7 @@ export default {
           name: 'Luís Teixeira',
           title: 'Senior Researcher @ INESC TEC',
           img: 'luis-teixeira.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
+          bio: 'Luis F. Teixeira holds a Ph.D. in Electrical and Computer Engineering from Universidade do Porto in the area of computer vision (2009). Currently he is an Assistant Professor at the Department of Informatics Engineering, Faculdade de Engenharia da Universidade do Porto, and a researcher at INESC TEC. Previously he was a researcher at INESC Porto (2001-2008), Visiting Researcher at the University of Victoria (2006), and Senior Scientist at Fraunhofer AICOS (2008-2013)',
           social: [
             {
               name: 'linkedin',
@@ -58,7 +58,7 @@ export default {
           name: 'Luís Vilaça',
           title: 'Researcher @ INESC TEC',
           img: 'luis-vilaca.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
+          bio: ' Research Assistant at INESC Technology and Science - Associate Laboratory',
           social: [
             {
               name: 'linkedin',
@@ -78,7 +78,7 @@ export default {
           name: 'Tiago Gonçalves',
           title: 'Researcher @ INESC TEC',
           img: 'tiago-goncalves.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
+          bio: 'Tiago Gonçalves received his MSc in Bioengineering (Biomedical Engineering) from Faculdade de Engenharia da Universidade do Porto (FEUP) in 2019. Currently, he is a PhD Candidate in Electrical and Computer Engineering at FEUP and a research assistant at the Centre for Telecommunications and Multimedia of INESC TEC with the Visual Computing & Machine Intelligence (VCMI) Research Group.',
           social: [
             {
               name: 'linkedin',
@@ -98,39 +98,23 @@ export default {
           name: 'Guilherme Carvalho',
           title: 'Researcher @ INESC TEC',
           img: 'guilherme-carvalho.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
+          bio: 'Invited Assistant Professor at Faculdade de Engenharia da Universidade do Porto',
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://www.linkedin.com/in/guilherme-luis-carvalho/',
             },
           ],
         },
         {
           name: 'Daniel Granhão',
           title: 'Researcher @ INESC TEC',
-          img: 'nuno.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
+          img: 'daniel-granhao.png',
+          bio: 'Currently pursuing a Ph.D. degree, which I expect to finish by 2023. Working on the development of efficient hardware architectures for neural network training and inference in embedded contexts. Interested in computing, FPGA-based acceleration, neural networks, and technology in general.',
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://www.linkedin.com/in/danielgranhao/',
             },
           ],
         },
@@ -138,7 +122,7 @@ export default {
           name: 'Paula Viana',
           title: 'Researcher @ INESC TEC',
           img: 'paula-viana.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
+          bio: 'Coordinator Professor at the Polytechnic of Porto and a Researcher at INESC TEC, where I lead the Multimedia Communications Technology Area. I  obtained my PhD from University of Porto in the area of multimedia content management. I have been responsible for the participation of INESC TEC in several national and European projects, involving universities and media industries.',
           social: [
             {
               name: 'linkedin',
@@ -158,39 +142,23 @@ export default {
           name: 'Gilberto Bernardes',
           title: 'Researcher @ INESC TEC',
           img: 'gilberto-bernardes.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
+          bio: 'Gilberto Bernardes has a multifaceted activity as a musician, professor, and researcher in sound and music computing. He holds a Ph.D. in digital media from the University of Porto and a Master of Music, cum laude, from the Amsterdamse Hogeschool voor de Kunsten. His research agenda focuses on sampling-based synthesis techniques and pitch spaces, whose findings have been reported in over 60 scientific publications. His artistic activity counts with regular concerts in venues with recognized merit,',
           social: [
             {
               name: 'linkedin',
               url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
             },
           ],
         },
         {
           name: 'André Coelho',
           title: 'Researcher @ INESC TEC',
-          img: 'nuno.jpg',
+          img: 'andre-coelho.png',
           bio: 'André Coelho has an MSc degree in Electrical and Computers Engineering from University of Porto, Portugal, in 2016. He is currently a PhD student in Telecommunications at University of Porto and a researcher in the Wireless Networks (WiN) research group of the Centre for Telecommunications and Multimedia at INESC TEC. His research interests include emerging wireless networks, with a special focus on flying networks composed of Unmanned Aerial Vehicles (UAVs), and beyond 5G networks.',
           social: [
             {
               name: 'linkedin',
               url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
             },
           ],
         },
@@ -198,7 +166,7 @@ export default {
           name: 'Manuel Ricardo',
           title: 'Senior Researcher @ INESC TEC',
           img: 'manuel-ricardo.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
+          bio: 'Manuel Alberto Pereira Ricardo has Licenciatura, M.Sc. and PhD (2000) degrees in Electrical and Computer Engineering (EEC), major of Telecommunications, from the Faculty of Engineering of the University of Porto (FEUP). Manuel Ricardo is currently a full professor at FEUP where he teaches courses on Mobile Communications and Computer Networks at FEUP.',
           social: [
             {
               name: 'linkedin',
@@ -237,20 +205,12 @@ export default {
         {
           name: 'Sofia Inácio',
           title: 'Researcher @ INESC TEC',
-          img: 'nuno.jpg',
+          img: 'sofia-inacio.jpg',
           bio: 'Sofia Inácio received the Licenciatura degree in Electronics and Telecommunications Engineering from the University of Madeira in 2013 and the Master’s degree, in Electrical and Computers Engineering with specialization in Telecommunications from the Faculty of Engineering of the University of Porto (FEUP) in 2016. Since 2020 she has been working towards the Doctoral Programme in Telecommunications at FEUP and at the Optical and Electronic Technologies (OET) group from the Centre of Telecommunications and Multimedia (CTM) at INESC TEC. Her current research interest is the design and analysis of antennas and antenna arrays with new materials.',
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://www.linkedin.com/in/sofia-in%C3%A1cio-a1002064/',
             },
           ],
         },
