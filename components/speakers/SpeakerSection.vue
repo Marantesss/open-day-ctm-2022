@@ -3,7 +3,15 @@
     <h1 class="text-4xl uppercase mb-4 text-ctm-dark-blue font-section-title">
       /Speakers
     </h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+    <div
+      class="
+        grid grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-3
+        xl:grid-cols-4
+        gap-5
+      "
+    >
       <SpeakerCard
         v-for="speaker in orderedSpeakers"
         :key="speaker.name"
@@ -23,14 +31,6 @@ export default {
   name: 'SpeakerSection',
   components: { SpeakerCard },
 
-  computed: {
-    orderedSpeakers() {
-      return [...this.speakers].sort((a, b) =>
-        a.name > b.name ? 1 : b.name > a.name ? -1 : 0
-      )
-    },
-  },
-
   data() {
     return {
       speakers: [
@@ -42,15 +42,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://linkedin.com/in/luisfteixeira',
             },
           ],
         },
@@ -62,15 +54,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://www.linkedin.com/in/luis-vilaca/',
             },
           ],
         },
@@ -82,15 +66,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://www.linkedin.com/in/tiagofilipegoncalves/',
             },
           ],
         },
@@ -128,14 +104,6 @@ export default {
               name: 'linkedin',
               url: 'https://linkedin.com',
             },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
-            },
           ],
         },
         {
@@ -170,15 +138,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://www.linkedin.com/in/manuel-ricardo-211523/',
             },
           ],
         },
@@ -190,15 +150,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://www.linkedin.com/in/luis-pessoa-310ab314/',
             },
           ],
         },
@@ -222,15 +174,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
+              url: 'https://www.linkedin.com/in/joanatavar/',
             },
           ],
         },
@@ -318,6 +262,14 @@ export default {
         */
       ],
     }
+  },
+
+  computed: {
+    orderedSpeakers() {
+      return [...this.speakers].sort((a, b) =>
+        a.name > b.name ? 1 : b.name > a.name ? -1 : 0
+      )
+    },
   },
 }
 </script>

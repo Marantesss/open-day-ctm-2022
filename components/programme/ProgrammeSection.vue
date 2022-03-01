@@ -152,9 +152,11 @@ export default {
         },
         {
           name: 'On-demand 6G Networks using Autonomous Platforms',
+          description:
+            'In this Workshop, the participants will configure a wireless network from scratch, leveraged by the controlled mobility provided by a Robot Dog to offer wireless connectivity on-demand.',
           time: '14:00',
           day: 'March 31st',
-          place: 'Auditório B',
+          place: 'I-105',
           speakers: [
             {
               name: 'André Coelho',
@@ -184,7 +186,7 @@ export default {
             'In this Workshop, the participants will configure a wireless network from scratch, leveraged by the controlled mobility provided by a Robot Dog to offer wireless connectivity on-demand.',
           time: '10:30',
           day: 'April 1st',
-          place: 'Auditório A',
+          place: 'I-105',
           speakers: [
             {
               name: 'André Coelho',
@@ -246,7 +248,7 @@ export default {
           ],
         },
         {
-          name: 'To be determined',
+          name: 'Creative Music Workshop',
           description: 'N/A',
           time: '14:00',
           day: 'April 1st',

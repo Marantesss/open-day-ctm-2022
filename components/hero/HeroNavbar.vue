@@ -20,7 +20,6 @@
         <OpenDayCTMLogo color="black" class="h-12 w-32" />
       </a>
       <button
-        data-collapse-toggle="mobile-menu"
         type="button"
         class="
           inline-flex
@@ -34,8 +33,7 @@
           focus:outline-none focus:ring-2 focus:ring-gray-200
           dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600
         "
-        aria-controls="mobile-menu-2"
-        aria-expanded="false"
+        @click="isMenuOpen = !isMenuOpen"
       >
         <span class="sr-only">Open main menu</span>
         <svg
@@ -63,7 +61,7 @@
           ></path>
         </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+      <div id="mobile-menu" class="w-full md:block md:w-auto" :class="{'block': isMenuOpen, 'hidden': !isMenuOpen }">
         <ul
           class="
             flex flex-col
@@ -74,7 +72,6 @@
           <li
             v-for="{ onClick, name } in sections"
             :key="name"
-            @click="onClick"
             class="
               cursor-pointer
               block
@@ -95,6 +92,7 @@
               dark:border-gray-700
             "
             aria-current="page"
+            @click="onClick"
             v-text="name"
           ></li>
         </ul>
@@ -110,6 +108,7 @@ export default {
   data() {
     return {
       atTopOfPage: true,
+      isMenuOpen: false,
       sections: [
         {
           name: '/about_us',

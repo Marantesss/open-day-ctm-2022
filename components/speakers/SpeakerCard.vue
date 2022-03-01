@@ -11,9 +11,13 @@
   >
     <img :src="img" class="rounded-full h-32 w-32 object-cover -m-16" />
     <div class="text-white text-center mt-16 px-2 pb-6">
-      <h2 v-text="name" class="text-2xl font-title"></h2>
-      <h4 v-text="title" class="text-base"></h4>
-      <p v-text="bio" class="font-lt text-sm line-clamp-6" style="height: 7.5rem;"></p>
+      <h2 class="text-2xl font-title" v-text="name"></h2>
+      <h4 class="text-base" v-text="title"></h4>
+      <p
+        class="font-lt text-sm line-clamp-6"
+        style="height: 7.5rem"
+        v-text="bio"
+      ></p>
       <div class="flex justify-center mt-4 items-end">
         <span v-for="{ name, url } in socials" :key="name" class="mx-3">
           <a v-if="name === 'twitter'" :href="url" target="_blank">
@@ -41,7 +45,7 @@ export default {
   components: {
     TwitterIcon,
     LinkedInIcon,
-    WebIcon
+    WebIcon,
   },
 
   props: {

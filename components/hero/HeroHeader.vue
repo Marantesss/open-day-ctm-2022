@@ -64,12 +64,9 @@
           >
             Learn from Experts
           </h2>
-          <div class="text-center">
-            <a
-              href="https://forms.gle/gD84wUa2otx8tMX96"
-              target="_blank"
+          <a href="https://forms.gle/gD84wUa2otx8tMX96" target="_blank" class="block text-center">
+            <button
               class="
-                cursor-pointer
                 bg-black
                 border-2 border-black
                 text-white
@@ -86,8 +83,8 @@
               "
             >
               Register Here
-            </a>
-          </div>
+            </button>
+          </a>
         </div>
       </div>
     </header>
