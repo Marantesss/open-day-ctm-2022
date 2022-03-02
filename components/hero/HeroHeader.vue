@@ -64,7 +64,7 @@
           >
             Learn from Experts
           </h2>
-          <a href="https://forms.gle/gD84wUa2otx8tMX96" target="_blank" class="block text-center">
+          <a :href="registrationLink" target="_blank" class="block text-center">
             <button
               class="
                 bg-black
@@ -102,6 +102,12 @@ export default {
     HeroBubbles,
     HeroNetwork,
   },
+
+  data() {
+    return {
+      registrationLink: 'https://forms.gle/gD84wUa2otx8tMX96',
+    }
+  }
 }
 </script>
 

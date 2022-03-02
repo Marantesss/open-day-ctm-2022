@@ -56,7 +56,7 @@ export default {
           ],
         },
         {
-          name: 'To be determined',
+          name: 'Computer Vision Workshop',
           description: 'N/A',
           time: '10:30',
           day: 'March 31st',
@@ -195,7 +195,7 @@ export default {
           ],
         },
         {
-          name: 'To be determined',
+          name: 'Computer Vision Workshop',
           description: 'N/A',
           time: '10:30',
           day: 'April 1st',
