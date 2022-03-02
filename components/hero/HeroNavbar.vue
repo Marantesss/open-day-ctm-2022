@@ -1,6 +1,6 @@
 <template>
   <nav
-    :class="{ 'bg-white shadow-md': !atTopOfPage }"
+    :class="{ 'bg-white shadow-md': !atTopOfPage || isMenuOpen }"
     class="
       px-2
       sm:px-4
