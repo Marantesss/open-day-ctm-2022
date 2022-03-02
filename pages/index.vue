@@ -4,6 +4,7 @@
     <AboutUs />
     <SpeakerSection />
     <ProgrammeSection />
+    <VenueSection />
     <OrganisationSection />
     <PastEditionsSection />
     <PartnersSection />
@@ -17,9 +18,10 @@ import AboutUs from '~/components/AboutUs'
 import SpeakerSection from '~/components/speakers/SpeakerSection'
 import OrganisationSection from '~/components/organisation/OrganisationSection'
 import ProgrammeSection from '~/components/programme/ProgrammeSection'
+import VenueSection from '~/components/venue/VenueSection'
 import PastEditionsSection from '~/components/past-editions/PastEditionsSection'
 import PartnersSection from '~/components/partners/PartnersSection'
-import FooterSection from '~/components/FooterSection.vue'
+import FooterSection from '~/components/FooterSection'
 
 export default {
   name: 'IndexPage',
@@ -31,7 +33,8 @@ export default {
     ProgrammeSection,
     PastEditionsSection,
     PartnersSection,
-    FooterSection
+    FooterSection,
+    VenueSection
   },
 }
 </script>
