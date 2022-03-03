@@ -10,7 +10,7 @@
     </p>
     <p class="mb-2">
       This year, CTM is designing the event for you, the students! Throughout
-      <span class="underline font-title">two full days</span> you’ll have the
+      <span class="underline font-title">two full days</span> you'll have the
       opportunity to attend four keynote speakers who are senior members of CTMs
       four scientific areas: Computer Vision and Machine Learning, Multimedia
       and Communications, Optical and Electrical Technologies, and Wireless

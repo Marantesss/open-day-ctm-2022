@@ -38,7 +38,7 @@ export default {
           name: 'Luís Teixeira',
           title: 'Senior Researcher @ INESC TEC',
           img: 'luis-teixeira.jpg',
-          bio: 'Luis F. Teixeira holds a Ph.D. in Electrical and Computer Engineering from Universidade do Porto in the area of computer vision (2009). Currently he is an Assistant Professor at the Department of Informatics Engineering, Faculdade de Engenharia da Universidade do Porto, and a researcher at INESC TEC. Previously he was a researcher at INESC Porto (2001-2008), Visiting Researcher at the University of Victoria (2006), and Senior Scientist at Fraunhofer AICOS (2008-2013)',
+          bio: 'Luís F. Teixeira is an Assistant Professor at the Department of Informatics Engineering, Faculdade de Engenharia da Universidade do Porto (FEUP) and a Senior Researcher of the Visual Computing and Machine Intelligence (VCMI) research group from the Center for Telecommunications and Multimedia at INESC TEC. Previously he was a Senior Scientist at Fraunhofer AICOS and the President of the APRP, the Portuguese Association for Pattern Recognition. His main research topics are computer vision, machine learning and human-centered computing.',
           social: [
             {
               name: 'linkedin',

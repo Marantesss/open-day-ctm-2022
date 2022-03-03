@@ -43,10 +43,10 @@ export default {
       // DAY 1
       day1: [
         {
-          name: 'To be determined',
+          name: 'Extracting knowledge from pixels - are computers better than humans at understanding images?',
           time: '10:00',
           day: 'March 31st',
-          description: 'N/A',
+          description: 'In this talk we will make a brief journey on how computer vision has evolved in the past 50 years. What makes it difficult for computers to understand images and what is possible today?',
           place: 'B032',
           speakers: [
             {
