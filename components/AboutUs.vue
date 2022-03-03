@@ -3,7 +3,7 @@
     <h1 class="text-4xl uppercase mb-4 font-section-title">/about_us</h1>
     <p class="mb-2">
       The Center for Telecommunications and Multimedia (CTM) is one of INESC
-      TEC’s many research centers. This event, the
+      TEC’s many research centers. The
       <span class="underline font-title">CTM Open Day</span> aims to showcase
       the variety and quality of the technical and scientific work undertaken by
       CTM and its collaborators.
@@ -12,9 +12,9 @@
       This year, CTM is designing the event for you, the students! Throughout
       <span class="underline font-title">two full days</span> you'll have the
       opportunity to attend four keynote speakers who are senior members of CTMs
-      four scientific areas: Computer Vision and Machine Learning, Multimedia
-      and Communications, Optical and Electrical Technologies, and Wireless
-      Communications.
+      four scientific areas: Visual Computing & Machine Intelligence, Multimedia
+      Communications Technologies, Optical and Electronic Technologies, and
+      Wireless Networks.
     </p>
     <p class="mb-2">
       But the main events are the several workshops our researchers and doctoral
@@ -24,7 +24,7 @@
     </p>
     <p class="mb-2">
       The event is <span class="underline font-title">free of charge</span>, but
-      registration is mandatory, so stay tuned for any updates to the program
+      registration is mandatory. So stay tuned for any updates to the program
       and for the opening of the registration.
     </p>
   </div>
