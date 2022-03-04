@@ -20,17 +20,19 @@
       ></span>
     </span>
     <div
-      class="p-2 w-full rounded-md pl-6"
+      class="p-2 w-full rounded-md pl-6 text-ctm-dark-blue"
       :class="{
-        'bg-ctm-light-blue text-ctm-dark-blue':
-          name !== 'Coffee Break' && name !== 'Lunch Break',
-        'bg-white text-ctm-dark-blue border-2 border-ctm-dark-blue':
-          name === 'Coffee Break' || name === 'Lunch Break',
+        'bg-ctm-light-blue': type === 'workshop' || type === 'keynote',
+        'bg-white border-2 border-ctm-dark-blue': type === 'break',
       }"
     >
       <div class="flex justify-between">
         <div class="flex-grow">
-          <h2 class="text-lg font-title" v-text="name"></h2>
+          <h2 class="text-lg">
+            <span v-if="type === 'keynote'" class="font-title">Keynote:</span>
+            <span v-else-if="type === 'workshop'" class="font-title">Workshop:</span>
+            {{ name }}
+          </h2>
           <p class="font-base" v-text="place"></p>
           <p
             v-for="speaker in speakers"
@@ -42,13 +44,17 @@
         <img
           v-for="{ photo } in speakers"
           :key="photo"
-          :class="speakers.length !== 1 ? '-ml-4' : ''"
+          :class="{
+            '-ml-4': speakers.length !== 1,
+            'border-ctm-light-blue': type === 'workshop' || type === 'keynote',
+          }"
           class="
             h-8
             w-8
             rounded-full
             object-cover
-            border-2 border-ctm-light-blue
+            border-2
+            flex-none
           "
           :src="`images/speakers/${photo}`"
         />
@@ -68,6 +74,10 @@ export default {
     time: {
       type: String,
       required: true,
+    },
+    type: {
+      type: String,
+      required: false,
     },
     day: {
       type: String,

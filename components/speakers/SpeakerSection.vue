@@ -132,7 +132,7 @@ export default {
         },
         {
           name: 'Manuel Ricardo',
-          title: 'Senior Researcher @ INESC TEC',
+          title: 'Associate Director @ INESC TEC',
           img: 'manuel-ricardo.jpg',
           bio: 'Manuel Alberto Pereira Ricardo has Licenciatura, M.Sc. and PhD (2000) degrees in Electrical and Computer Engineering (EEC), major of Telecommunications, from the Faculty of Engineering of the University of Porto (FEUP). Manuel Ricardo is currently a full professor at FEUP where he teaches courses on Mobile Communications and Computer Networks at FEUP.',
           social: [

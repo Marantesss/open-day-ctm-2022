@@ -7,11 +7,12 @@
       <div class="text-center grid grid-cols-1 gap-2 items-start">
         <h3 class="text-xl text-ctm-dark-blue font-bold">March 31st</h3>
         <ProgrammeCard
-          v-for="{ name, time, day, place, speakers } in day1"
+          v-for="{ name, time, day, place, speakers, type } in day1"
           :key="name"
           :name="name"
           :time="time"
           :day="day"
+          :type="type"
           :place="place"
           :speakers="speakers"
         />
@@ -19,11 +20,12 @@
       <div class="text-center grid grid-cols-1 gap-2 items-start">
         <h3 class="text-xl text-ctm-dark-blue font-bold">April 1st</h3>
         <ProgrammeCard
-          v-for="{ name, time, day, place, speakers } in day2"
+          v-for="{ name, time, day, place, speakers, type } in day2"
           :key="name"
           :name="name"
           :time="time"
           :day="day"
+          :type="type"
           :place="place"
           :speakers="speakers"
         />
@@ -46,6 +48,7 @@ export default {
           name: 'Extracting knowledge from pixels - are computers better than humans at understanding images?',
           time: '10:00',
           day: 'March 31st',
+          type: 'keynote',
           description: 'In this talk we will make a brief journey on how computer vision has evolved in the past 50 years. What makes it difficult for computers to understand images and what is possible today?',
           place: 'B032',
           speakers: [
@@ -58,8 +61,9 @@ export default {
         {
           name: 'Computer Vision Workshop',
           description: 'N/A',
-          time: '10:30',
+          time: '11:00',
           day: 'March 31st',
+          type: 'workshop',
           place: 'Auditório A',
           speakers: [
             {
@@ -72,42 +76,13 @@ export default {
             },
           ],
         },
-        // {
-        //   name: 'Visão Computacional',
-        //   time: '10:30',
-        //   day: 'March 31st',
-        //   description:
-        //     'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
-        //   place: 'Auditório A',
-        //   speakers: [
-        //     {
-        //       name: 'Eduardo Meca',
-        //       photo: 'nuno.jpg',
-        //     },
-        //     {
-        //       name: 'Isabel Rio-Torto',
-        //       photo: 'isabel-rio-torto.jpg',
-        //     },
-        //     {
-        //       name: 'Luís Salgado',
-        //       photo: 'nuno.jpg',
-        //     },
-        //     {
-        //       name: 'Pedro Neto',
-        //       photo: 'nuno.jpg',
-        //     },
-        //     {
-        //       name: 'Tomé Albuquerque',
-        //       photo: 'tome-albuquerque.jpg',
-        //     },
-        //   ],
-        // },
         {
           name: 'The First Steps into HLS',
-          time: '10:30',
+          time: '11:00',
           day: 'March 31st',
           description:
             'An introduction to High-Level Synthesis tools as a fast prototyping method for HW accelerators. In this workshop we will start by learning the basics of HLS, explore a real world example to see the kind of decisions a developer might have to make, and finally see that example used on an FPGA.',
+          type: 'workshop',
           place: 'Auditório B',
           speakers: [
             {
@@ -123,13 +98,15 @@ export default {
         {
           name: 'Lunch Break',
           time: '12:30',
+          type: 'break',
           day: 'March 31st',
         },
         {
           name: 'MCT Overview and Projects',
           description: 'N/A',
-          time: '13:30',
+          time: '14:00',
           day: 'April 1st',
+          type: 'keynote',
           place: 'B032',
           speakers: [
             {
@@ -140,8 +117,9 @@ export default {
         },
         {
           name: 'Creative Music Workshop',
-          time: '14:00',
+          time: '15:00',
           day: 'March 31st',
+          type: 'workshop',
           place: 'Auditório A',
           speakers: [
             {
@@ -154,8 +132,9 @@ export default {
           name: 'On-demand 6G Networks using Autonomous Platforms',
           description:
             'In this Workshop, the participants will configure a wireless network from scratch, leveraged by the controlled mobility provided by a Robot Dog to offer wireless connectivity on-demand.',
-          time: '14:00',
+          time: '15:00',
           day: 'March 31st',
+          type: 'workshop',
           place: 'I-105',
           speakers: [
             {
@@ -172,6 +151,7 @@ export default {
           description: 'N/A',
           time: '10:00',
           day: 'April 1st',
+          type: 'keynote',
           place: 'B032',
           speakers: [
             {
@@ -184,8 +164,9 @@ export default {
           name: 'On-demand 6G Networks using Autonomous Platforms',
           description:
             'In this Workshop, the participants will configure a wireless network from scratch, leveraged by the controlled mobility provided by a Robot Dog to offer wireless connectivity on-demand.',
-          time: '10:30',
+          time: '11:00',
           day: 'April 1st',
+          type: 'workshop',
           place: 'I-105',
           speakers: [
             {
@@ -197,8 +178,9 @@ export default {
         {
           name: 'Computer Vision Workshop',
           description: 'N/A',
-          time: '10:30',
+          time: '11:00',
           day: 'April 1st',
+          type: 'workshop',
           place: 'Auditório B',
           speakers: [
             {
@@ -214,13 +196,15 @@ export default {
         {
           name: 'Lunch Break',
           time: '12:30',
+          type: 'break',
           day: 'April 1st',
         },
         {
           name: 'Reconfigurable and large intelligent surfaces towards 6G',
           description: 'N/A',
-          time: '13:30',
+          time: '14:00',
           day: 'April 1st',
+          type: 'keynote',
           place: 'B032',
           speakers: [
             {
@@ -233,8 +217,9 @@ export default {
           name: 'Antenna Arrays',
           description:
             'An introduction to antenna array design and analysis in MATLAB, and to antenna and antenna array design, simulation and analysis in CST Studio Suite Student Edition.',
-          time: '14:00',
+          time: '15:00',
           day: 'April 1st',
+          type: 'workshop',
           place: 'Auditório A',
           speakers: [
             {
@@ -250,8 +235,9 @@ export default {
         {
           name: 'Creative Music Workshop',
           description: 'N/A',
-          time: '14:00',
+          time: '15:00',
           day: 'April 1st',
+          type: 'workshop',
           place: 'Auditório B',
           speakers: [
             {
