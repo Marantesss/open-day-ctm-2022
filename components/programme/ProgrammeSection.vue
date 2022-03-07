@@ -7,7 +7,7 @@
       <div class="text-center grid grid-cols-1 gap-2 items-start">
         <h3 class="text-xl text-ctm-dark-blue font-bold">March 31st</h3>
         <ProgrammeCard
-          v-for="{ name, time, day, place, speakers, type } in day1"
+          v-for="{ name, time, day, place, speakers, type, description } in day1"
           :key="name"
           :name="name"
           :time="time"
@@ -15,12 +15,13 @@
           :type="type"
           :place="place"
           :speakers="speakers"
+          :description="description"
         />
       </div>
       <div class="text-center grid grid-cols-1 gap-2 items-start">
         <h3 class="text-xl text-ctm-dark-blue font-bold">April 1st</h3>
         <ProgrammeCard
-          v-for="{ name, time, day, place, speakers, type } in day2"
+          v-for="{ name, time, day, place, speakers, type, description } in day2"
           :key="name"
           :name="name"
           :time="time"
@@ -28,6 +29,7 @@
           :type="type"
           :place="place"
           :speakers="speakers"
+          :description="description"
         />
       </div>
     </div>
