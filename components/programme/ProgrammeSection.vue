@@ -62,7 +62,7 @@ export default {
         },
         {
           name: 'Computer Vision Workshop',
-          description: 'N/A',
+          description: 'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
           time: '11:00',
           day: 'March 31st',
           type: 'workshop',
@@ -120,6 +120,7 @@ export default {
         {
           name: 'Creative Music Workshop',
           time: '15:00',
+          description: 'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
           day: 'March 31st',
           type: 'workshop',
           place: 'Auditório A',
@@ -179,7 +180,7 @@ export default {
         },
         {
           name: 'Computer Vision Workshop',
-          description: 'N/A',
+          description: 'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
           time: '11:00',
           day: 'April 1st',
           type: 'workshop',
@@ -236,7 +237,7 @@ export default {
         },
         {
           name: 'Creative Music Workshop',
-          description: 'N/A',
+          description: 'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
           time: '15:00',
           day: 'April 1st',
           type: 'workshop',
