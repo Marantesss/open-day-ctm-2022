@@ -7,7 +7,15 @@
       <div class="text-center grid grid-cols-1 gap-2 items-start">
         <h3 class="text-xl text-ctm-dark-blue font-bold">March 31st</h3>
         <ProgrammeCard
-          v-for="{ name, time, day, place, speakers, type, description } in day1"
+          v-for="{
+            name,
+            time,
+            day,
+            place,
+            speakers,
+            type,
+            description,
+          } in day1"
           :key="name"
           :name="name"
           :time="time"
@@ -21,7 +29,15 @@
       <div class="text-center grid grid-cols-1 gap-2 items-start">
         <h3 class="text-xl text-ctm-dark-blue font-bold">April 1st</h3>
         <ProgrammeCard
-          v-for="{ name, time, day, place, speakers, type, description } in day2"
+          v-for="{
+            name,
+            time,
+            day,
+            place,
+            speakers,
+            type,
+            description,
+          } in day2"
           :key="name"
           :name="name"
           :time="time"
@@ -51,7 +67,8 @@ export default {
           time: '10:00',
           day: 'March 31st',
           type: 'keynote',
-          description: 'In this talk we will make a brief journey on how computer vision has evolved in the past 50 years. What makes it difficult for computers to understand images and what is possible today?',
+          description:
+            'In this talk we will make a brief journey on how computer vision has evolved in the past 50 years. What makes it difficult for computers to understand images and what is possible today?',
           place: 'B032',
           speakers: [
             {
@@ -62,7 +79,8 @@ export default {
         },
         {
           name: 'Computer Vision Workshop',
-          description: 'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
+          description:
+            'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
           time: '11:00',
           day: 'March 31st',
           type: 'workshop',
@@ -73,8 +91,12 @@ export default {
               photo: 'luis-vilaca.jpg',
             },
             {
-              name: 'Tiago Gonçalves',
-              photo: 'tiago-goncalves.jpg',
+              name: 'Eduardo Castro',
+              photo: 'eduardo-castro.jpg',
+            },
+            {
+              name: 'Pedro Neto',
+              photo: 'pedro-neto.jpg',
             },
           ],
         },
@@ -120,7 +142,8 @@ export default {
         {
           name: 'Creative Music Workshop',
           time: '15:00',
-          description: 'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
+          description:
+            'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
           day: 'March 31st',
           type: 'workshop',
           place: 'Auditório A',
@@ -180,19 +203,24 @@ export default {
         },
         {
           name: 'Computer Vision Workshop',
-          description: 'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
+          description:
+            'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
           time: '11:00',
           day: 'April 1st',
           type: 'workshop',
           place: 'Auditório B',
           speakers: [
             {
-              name: 'Luís Vilaça',
-              photo: 'luis-vilaca.jpg',
+              name: 'Isabel Rio-Torto',
+              photo: 'isabel-rio-torto.jpg',
             },
             {
               name: 'Tiago Gonçalves',
               photo: 'tiago-goncalves.jpg',
+            },
+            {
+              name: 'Tomé Albuquerque',
+              photo: 'tome-albuquerque.jpg',
             },
           ],
         },
@@ -237,7 +265,8 @@ export default {
         },
         {
           name: 'Creative Music Workshop',
-          description: 'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
+          description:
+            'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
           time: '15:00',
           day: 'April 1st',
           type: 'workshop',

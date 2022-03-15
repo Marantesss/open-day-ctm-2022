@@ -35,6 +35,58 @@ export default {
     return {
       speakers: [
         {
+          name: 'Tomé Albuquerque',
+          title: 'Research Assistant @ INESC TEC',
+          img: 'tome-albuquerque.jpg',
+          bio: 'Tomé Albuquerque received a B.Sc. degree in biochemistry from University of Aveiro and a M.S degree in biomedical engineering from the Faculty of Engineering of the University of Porto. He is currently pursuing the Ph.D. degree also with University of Porto. He is also a Researcher at INESC TEC since 2019. His main research interests include machine learning, computer vision and medical imaging diagnonsis in decision support systems.',
+          social: [
+            {
+              name: 'linkedin',
+              url: 'https://www.linkedin.com/in/tom%C3%A9-albuquerque-ba087170/',
+            },
+          ],
+        },
+        {
+          name: 'Eduardo Castro',
+          title: 'Research Assistant @ INESC TEC',
+          img: 'eduardo-castro.jpg',
+          bio: 'Eduardo Castro is a PhD student at the Faculty of Engeneering of the University of Porto. His research work is conducted in the Visual Computing & Machine Intelligence (VCMI) group, at INESC TEC. His research interests include machine learning, computer vision, automatic breast cancer screening systems and fingerprint biometrics',
+          social: [
+            {
+              name: 'website',
+              url: 'https://eduardo-castro.github.io/',
+            },
+          ],
+        },
+        {
+          name: 'Pedro Neto',
+          title: 'Researcher @ INESC TEC',
+          img: 'pedro-neto.jpg',
+          bio: 'Pedro Neto is a second-year PhD candidate in Electrical and Computer Engineering at Faculdade de Engenharia da Universidade do Porto (FEUP) and a researcher at Instituto de Engenharia, Sistemas e Computadores, Tecnologia e Ciência (INESC TEC). His PhD, “Explainable Artificial Intelligence for Fair and Transparent Biometrics”, is directed towards the problems exhibited by current biometric systems, such as, race and gender biased in face recognition. Pedro also conducts research for the CADPath.AI project, which aims to build a deep learning method for automated diagnosis of colorectal cancer from whole slide images. Pedro holds a MSc degree with honors in Computer Science awarded by Aalto University, Finland, and a BSc degree with honors in Software/Informatics Engineering awarded by the Instituto Superior de Engenharia do Porto (ISEP)',
+          social: [
+            {
+              name: 'linkedin',
+              url: 'https://www.linkedin.com/in/pedro-neto-a94862106/',
+            },
+            {
+              name: 'website',
+              url: 'https://netopedro.github.io/',
+            },
+          ],
+        },
+        {
+          name: 'Isabel Rio-Torto',
+          title: 'Research Assistant @ INESC TEC',
+          img: 'isabel-rio-torto.jpg',
+          bio: 'Isabel Rio-Torto is a second-year PhD candidate in Computer Science at Faculdade de Ciências da Universidade do Porto (FCUP) and a researcher at Instituto de Engenharia, Sistemas e Computadores, Tecnologia e Ciência (INESC TEC). Her PhD, “Self-explanatory computer-aided diagnosis with limited supervision”, focuses on tackling the two main issues that prevent deep learning models from being deployed to the clinics: the need for large amounts of labelled data and lack of explainability. She is also an invited teaching assistant at Faculdade de Engenharia da Universidade do Porto (FEUP). Isabel previously studied Electrical and Computers Engineering at FEUP, where she developed her master thesis “Producing Decisions and Explanations: A Joint Approach Towards Explainable CNNs”, which won her the 1st place of the 2020 Fraunhofer Portugal Challenge (MSc category) and the Best 2020 Master Thesis Award by Associação Portuguesa de Reconhecimento de Padrões (APRP).',
+          social: [
+            {
+              name: 'linkedin',
+              url: 'https://linkedin.com',
+            },
+          ],
+        },
+        {
           name: 'Luís Teixeira',
           title: 'Senior Researcher @ INESC TEC',
           img: 'luis-teixeira.jpg',
@@ -48,9 +100,9 @@ export default {
         },
         {
           name: 'Luís Vilaça',
-          title: 'Researcher @ INESC TEC',
+          title: 'Research Assistant @ INESC TEC',
           img: 'luis-vilaca.jpg',
-          bio: ' Research Assistant at INESC Technology and Science - Associate Laboratory',
+          bio: 'Luís Vilaça is a research assistant at INESC TEC and conducts his research at the Multimedia and Communications Technologies group. Currently, he is also in the 1st year of the PhD in Electrical and Computer Engineering at FEUP. His research interests include computer vision and multimodal machine learning for multimedia content recommendation.',
           social: [
             {
               name: 'linkedin',
@@ -62,7 +114,7 @@ export default {
           name: 'Tiago Gonçalves',
           title: 'Researcher @ INESC TEC',
           img: 'tiago-goncalves.jpg',
-          bio: 'Tiago Gonçalves received his MSc in Bioengineering (Biomedical Engineering) from Faculdade de Engenharia da Universidade do Porto (FEUP) in 2019. Currently, he is a PhD Candidate in Electrical and Computer Engineering at FEUP and a research assistant at the Centre for Telecommunications and Multimedia of INESC TEC with the Visual Computing & Machine Intelligence (VCMI) Research Group.',
+          bio: 'Tiago Gonçalves received his MSc in Bioengineering (Biomedical Engineering) from Faculdade de Engenharia da Universidade do Porto (FEUP) in 2019. Currently, he is a PhD Candidate in Electrical and Computer Engineering at FEUP and a research assistant at the Centre for Telecommunications and Multimedia of INESC TEC with the Visual Computing & Machine Intelligence (VCMI) Research Group. His research interests include machine learning, explainable artificial intelligence (in-model approaches), computer vision, medical decision support systems, and machine learning deployment',
           social: [
             {
               name: 'linkedin',
@@ -178,88 +230,6 @@ export default {
             },
           ],
         },
-        /*
-        {
-          name: 'Eduardo Meca',
-          title: 'Researcher @ INESC TEC',
-          img: 'nuno.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
-          social: [
-            {
-              name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
-            },
-          ],
-        },
-        {
-          name: 'Isabel Rio Torto',
-          title: 'Researcher @ INESC TEC',
-          img: 'isabel-rio-torto.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
-          social: [
-            {
-              name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
-            },
-          ],
-        },
-        {
-          name: 'Pedro Neto',
-          title: 'Researcher @ INESC TEC',
-          img: 'nuno.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
-          social: [
-            {
-              name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
-            },
-          ],
-        },
-        {
-          name: 'Tomé Albuquerque',
-          title: 'Researcher @ INESC TEC',
-          img: 'tome-albuquerque.jpg',
-          bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit inventore officia ipsa dolorem ducimus dicta pariatur minima ea earum quas animi, laboriosam laborum? Quam dignissimos officiis nisi a tempore quisquam.',
-          social: [
-            {
-              name: 'linkedin',
-              url: 'https://linkedin.com',
-            },
-            {
-              name: 'twitter',
-              url: 'https://twitter.com',
-            },
-            {
-              name: 'website',
-              url: 'https://google.com',
-            },
-          ],
-        },
-        */
       ],
     }
   },
