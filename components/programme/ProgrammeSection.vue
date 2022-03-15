@@ -49,17 +49,41 @@
         />
       </div>
     </div>
+    <h2
+      class="text-xl text-center uppercase my-6 text-ctm-dark-blue font-section-title"
+    >
+      Challenges
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
+      <ChallengeCard
+        v-for="{ title, description } in challenges"
+        :key="title"
+        :title="title"
+        :description="description"
+      />
+    </div>
   </div>
 </template>
 
 <script>
+import ChallengeCard from './ChallengeCard.vue'
 import ProgrammeCard from './ProgrammeCard'
 
 export default {
   name: 'ProgrammeSection',
-  components: { ProgrammeCard },
+  components: { ProgrammeCard, ChallengeCard },
   data() {
     return {
+      // challenges
+      challenges: [
+        {
+          title: 'How to Set Up a Hidden Private Wireless Network?',
+          description: [
+            'Keep your neighbors and passersby away from your wireless network! You and your team will be challenged to set up a hidden private wireless network in your home, able to provide Internet access to residents without anyone else knowing it is there.',
+            'The fastest team to prove its feat will receive a prize. Secret for now!',
+          ],
+        },
+      ],
       // DAY 1
       day1: [
         {
