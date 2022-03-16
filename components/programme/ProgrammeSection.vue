@@ -56,10 +56,11 @@
     </h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
       <ChallengeCard
-        v-for="{ title, description } in challenges"
+        v-for="{ title, description, workshop } in challenges"
         :key="title"
         :title="title"
         :description="description"
+        :workshop="workshop"
       />
     </div>
   </div>
@@ -78,6 +79,7 @@ export default {
       challenges: [
         {
           title: 'How to Set Up a Hidden Private Wireless Network?',
+          workshop: 'On-demand 6G Networks using Autonomous Platforms',
           description: [
             'Keep your neighbors and passersby away from your wireless network! You and your team will be challenged to set up a hidden private wireless network in your home, able to provide Internet access to residents without anyone else knowing it is there.',
             'The fastest team to prove its feat will receive a prize. Secret for now!',
