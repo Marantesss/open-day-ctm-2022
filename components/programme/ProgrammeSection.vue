@@ -3,6 +3,17 @@
     <h1 class="text-4xl uppercase mb-4 text-ctm-dark-blue font-section-title">
       /Programme
     </h1>
+    <div class="p-4 bg-red-50 rounded-md">
+      <p class="text-red-600 font-lt">
+        <WarningIcon class="inline-flex" />
+        <span class="font-title">Update:</span> Our four keynote sessions will
+        be <span class="font-title">hybrid</span>, meaning you can physically
+        attend at the indicated room, or via a Zoom link (which we will post on
+        this website the day prior to the event. The workshops are
+        <span class="font-title">in-person only</span>, at the rooms indicated
+        in the programme below.
+      </p>
+    </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
       <div class="text-center grid grid-cols-1 gap-2 items-start">
         <h3 class="text-xl text-ctm-dark-blue font-bold">March 31st</h3>
@@ -10,8 +21,10 @@
           v-for="{
             name,
             time,
+            end,
             day,
             place,
+            zoom,
             speakers,
             type,
             description,
@@ -19,9 +32,11 @@
           :key="name"
           :name="name"
           :time="time"
+          :end="end"
           :day="day"
           :type="type"
           :place="place"
+          :zoom="zoom"
           :speakers="speakers"
           :description="description"
         />
@@ -32,8 +47,10 @@
           v-for="{
             name,
             time,
+            end,
             day,
             place,
+            zoom,
             speakers,
             type,
             description,
@@ -41,9 +58,11 @@
           :key="name"
           :name="name"
           :time="time"
+          :end="end"
           :day="day"
           :type="type"
           :place="place"
+          :zoom="zoom"
           :speakers="speakers"
           :description="description"
         />
@@ -73,12 +92,13 @@
 </template>
 
 <script>
-import ChallengeCard from './ChallengeCard.vue'
+import WarningIcon from '../icons/WarningIcon'
+import ChallengeCard from './ChallengeCard'
 import ProgrammeCard from './ProgrammeCard'
 
 export default {
   name: 'ProgrammeSection',
-  components: { ProgrammeCard, ChallengeCard },
+  components: { ProgrammeCard, ChallengeCard, WarningIcon },
   data() {
     return {
       // Challenges
@@ -106,11 +126,13 @@ export default {
         {
           name: 'Extracting knowledge from pixels - are computers better than humans at understanding images?',
           time: '10:00',
+          end: '10:45',
           day: 'March 31st',
           type: 'keynote',
           description:
             'In this talk we will make a brief journey on how computer vision has evolved in the past 50 years. What makes it difficult for computers to understand images and what is possible today?',
           place: 'B032',
+          zoom: 'https://zoom.us/',
           speakers: [
             {
               name: 'Luís Teixeira',
@@ -123,6 +145,7 @@ export default {
           description:
             'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
           time: '11:00',
+          end: '13:00',
           day: 'March 31st',
           type: 'workshop',
           place: 'Auditório A',
@@ -144,6 +167,7 @@ export default {
         {
           name: 'The First Steps into HLS',
           time: '11:00',
+          end: '13:00',
           day: 'March 31st',
           description:
             'An introduction to High-Level Synthesis tools as a fast prototyping method for HW accelerators. In this workshop we will start by learning the basics of HLS, explore a real world example to see the kind of decisions a developer might have to make, and finally see that example used on an FPGA.',
@@ -162,17 +186,21 @@ export default {
         },
         {
           name: 'Lunch Break',
-          time: '12:30',
+          time: '13:00',
+          end: '14:00',
           type: 'break',
           day: 'March 31st',
         },
         {
-          name: 'MCT Overview and Projects',
-          description: 'N/A',
+          name: 'Can you imagine a world without multimedia content?',
+          description:
+            'In this talk we will discuss technologies, challenges and innovative approaches to create, manage and access multimedia content. The talk is directly related with the Computer Vision and Creative Music Workshops.',
           time: '14:00',
+          end: '14:45',
           day: 'April 1st',
           type: 'keynote',
           place: 'B032',
+          zoom: 'https://zoom.us/',
           speakers: [
             {
               name: 'Paula Viana',
@@ -183,6 +211,7 @@ export default {
         {
           name: 'Creative Music Workshop',
           time: '15:00',
+          end: '17:00',
           description:
             'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
           day: 'March 31st',
@@ -200,6 +229,7 @@ export default {
           description:
             'In this Workshop, the participants will configure a wireless network from scratch, leveraged by the controlled mobility provided by a Robot Dog to offer wireless connectivity on-demand.',
           time: '15:00',
+          end: '17:00',
           day: 'March 31st',
           type: 'workshop',
           place: 'I-105',
@@ -217,9 +247,11 @@ export default {
           name: 'Beyond 5G Communications',
           description: 'N/A',
           time: '10:00',
+          end: '10:45',
           day: 'April 1st',
           type: 'keynote',
           place: 'B032',
+          zoom: 'https://zoom.us/',
           speakers: [
             {
               name: 'Manuel Ricardo',
@@ -232,6 +264,7 @@ export default {
           description:
             'In this Workshop, the participants will configure a wireless network from scratch, leveraged by the controlled mobility provided by a Robot Dog to offer wireless connectivity on-demand.',
           time: '11:00',
+          end: '13:00',
           day: 'April 1st',
           type: 'workshop',
           place: 'I-105',
@@ -247,6 +280,7 @@ export default {
           description:
             'In the Computer Vision Workshop, you will have hands-on experience in computer vision and machine learning. You will learn, implement and test main techniques for image analysis using methods that range from traditional machine learning to deep learning.',
           time: '11:00',
+          end: '13:00',
           day: 'April 1st',
           type: 'workshop',
           place: 'Auditório B',
@@ -267,7 +301,8 @@ export default {
         },
         {
           name: 'Lunch Break',
-          time: '12:30',
+          time: '13:00',
+          end: '14:00',
           type: 'break',
           day: 'April 1st',
         },
@@ -275,9 +310,11 @@ export default {
           name: 'Reconfigurable and large intelligent surfaces towards 6G',
           description: 'N/A',
           time: '14:00',
+          end: '14:45',
           day: 'April 1st',
           type: 'keynote',
           place: 'B032',
+          zoom: 'https://zoom.us/',
           speakers: [
             {
               name: 'Luís Pessoa',
@@ -290,6 +327,7 @@ export default {
           description:
             'An introduction to antenna array design and analysis in MATLAB, and to antenna and antenna array design, simulation and analysis in CST Studio Suite Student Edition.',
           time: '15:00',
+          end: '17:00',
           day: 'April 1st',
           type: 'workshop',
           place: 'Auditório A',
@@ -308,7 +346,8 @@ export default {
           name: 'Creative Music Workshop',
           description:
             'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
-          time: '15:00',
+          time: '17:00',
+          end: '15:00',
           day: 'April 1st',
           type: 'workshop',
           place: 'Auditório B',
