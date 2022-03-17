@@ -50,7 +50,13 @@
       </div>
     </div>
     <h2
-      class="text-xl text-center uppercase my-6 text-ctm-dark-blue font-section-title"
+      class="
+        text-xl text-center
+        uppercase
+        my-6
+        text-ctm-dark-blue
+        font-section-title
+      "
     >
       Challenges
     </h2>
@@ -75,8 +81,16 @@ export default {
   components: { ProgrammeCard, ChallengeCard },
   data() {
     return {
-      // challenges
+      // Challenges
       challenges: [
+        {
+          title: 'Computer Vision Challenge',
+          workshop: 'Computer Vision Workshop',
+          description: [
+            'Apply what you learned in the Workshops and use Computer Vision algorithms to recognise the characters of a well-known TV-series. Kaggle is waiting for you! Can you go from “Hello World” to “Yellow World”?',
+          ],
+          document: '/computer-vision-challenge.pdf',
+        },
         {
           title: 'How to Set Up a Hidden Private Wireless Network?',
           workshop: 'On-demand 6G Networks using Autonomous Platforms',
@@ -84,6 +98,7 @@ export default {
             'Keep your neighbors and passersby away from your wireless network! You and your team will be challenged to set up a hidden private wireless network in your home, able to provide Internet access to residents without anyone else knowing it is there.',
             'The fastest team to prove its feat will receive a prize. Secret for now!',
           ],
+          document: '/wireless-networks-challenge.pdf',
         },
       ],
       // DAY 1

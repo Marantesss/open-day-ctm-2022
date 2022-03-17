@@ -6,12 +6,25 @@
       <span class="underline" v-text="workshop"></span>
     </h4>
     <p v-for="par in description" :key="par" v-text="par"></p>
+    <a
+      class="flex gap-2 hover:underline my-2 font-lt"
+      :href="document"
+      target="_blank"
+    >
+      <DocumentIcon />
+      Challenge document available soon
+    </a>
   </div>
 </template>
 
 <script>
+import DocumentIcon from '../icons/DocumentIcon'
 export default {
   name: 'ChallengeCard',
+
+  components: {
+    DocumentIcon,
+  },
 
   props: {
     title: {
@@ -21,6 +34,11 @@ export default {
     workshop: {
       type: String,
       required: true,
+    },
+    document: {
+      type: String,
+      required: false,
+      default: '/',
     },
     description: {
       type: Array,
