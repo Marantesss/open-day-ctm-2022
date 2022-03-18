@@ -9,7 +9,7 @@
         <span class="font-title">Update:</span> Our four keynote sessions will
         be <span class="font-title">hybrid</span>, meaning you can physically
         attend at the indicated room, or via a Zoom link (which we will post on
-        this website the day prior to the event. The workshops are
+        this website the day prior to the event). The workshops are
         <span class="font-title">in-person only</span>, at the rooms indicated
         in the programme below.
       </p>

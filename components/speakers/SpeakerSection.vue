@@ -35,6 +35,42 @@ export default {
     return {
       speakers: [
         {
+          name: 'Eduardo Almeida',
+          title: 'Research Assitant @ INESC TEC',
+          img: 'eduardo-almeida.jpg',
+          bio: 'Eduardo Nuno Almeida is an R&D Engineer at INESC TEC and a PhD candidate in the Doctoral Programme in Telecommunications (MAP-tele) at Faculdade de Engenharia, Universidade do Porto (FEUP). Since 2021, he is also an invited Teaching Assistant at FEUP, lecturing courses on telecommunications and informatics. Currently, he is pursuing his PhD research on traffic-aware UAV placement for aerial wireless networks, using artificial intelligence techniques. Additionally, he is an active contributor of the network simulator ns-3 open-source project.',
+          social: [
+            {
+              name: 'linkedin',
+              url: 'https://www.linkedin.com/',
+            },
+          ],
+        },
+        {
+          name: 'Rúben Queirós',
+          title: 'Research Assitant @ INESC TEC',
+          img: 'ruben-queiros.jpg',
+          bio: 'Rúben Queirós has received the MSc degree in Electrical and Computer Engineering in 2020 and is currently pursuing a PhD in the Doctoral Programme in Electrical and Computer Engineering (PDEEC), both at the Faculty of Engineering of the University of Porto (FEUP). Currently working as a research assistant in Wireless Networks (WiN) group from the Centre of Telecommunications and Multimedia (CTM) at INESC TEC, his main research interests include Wi-Fi Link Adaptation, Deep Reinforcement Learning.',
+          social: [
+            {
+              name: 'linkedin',
+              url: 'https://www.linkedin.com/in/rubenqueiros/',
+            },
+          ],
+        },
+        {
+          name: 'João Loureiro',
+          title: 'Research Assitant @ INESC TEC',
+          img: 'joao-loureiro.jpg',
+          bio: 'João Pedro Loureiro received a MSc degree in Electrical and Computer Engineering from the University of Porto (FEUP). He is currently pursuing a PhD in Electrical and Computer Engineering and working as a Researcher in the Wireless Networks research group (WiN) from the Centre for Telecommunications and Multimedia (CTM) at INESC TEC. His research interests include underwater communications and multimodal wireless networks.',
+          social: [
+            {
+              name: 'linkedin',
+              url: 'https://www.linkedin.com/in/jp-loureiro/',
+            },
+          ],
+        },
+        {
           name: 'Tomé Albuquerque',
           title: 'Research Assistant @ INESC TEC',
           img: 'tome-albuquerque.jpg',
