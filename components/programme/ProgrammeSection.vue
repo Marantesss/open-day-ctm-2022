@@ -238,6 +238,18 @@ export default {
               name: 'André Coelho',
               photo: 'andre-coelho.png',
             },
+            {
+              name: 'Eduardo Almeira',
+              photo: 'blank-user.jpg',
+            },
+            {
+              name: 'Rúben Queirós',
+              photo: 'ruben-queiros.jpg',
+            },
+            {
+              name: 'João Loureiro',
+              photo: 'joao-loureiro.jpg',
+            },
           ],
         },
       ],
@@ -272,6 +284,18 @@ export default {
             {
               name: 'André Coelho',
               photo: 'andre-coelho.png',
+            },
+            {
+              name: 'Eduardo Almeira',
+              photo: 'blank-user.jpg',
+            },
+            {
+              name: 'Rúben Queirós',
+              photo: 'ruben-queiros.jpg',
+            },
+            {
+              name: 'João Loureiro',
+              photo: 'joao-loureiro.jpg',
             },
           ],
         },

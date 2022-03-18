@@ -37,7 +37,7 @@ export default {
         {
           name: 'Eduardo Almeida',
           title: 'Research Assitant @ INESC TEC',
-          img: 'eduardo-almeida.jpg',
+          img: 'blank-user.jpg',
           bio: 'Eduardo Nuno Almeida is an R&D Engineer at INESC TEC and a PhD candidate in the Doctoral Programme in Telecommunications (MAP-tele) at Faculdade de Engenharia, Universidade do Porto (FEUP). Since 2021, he is also an invited Teaching Assistant at FEUP, lecturing courses on telecommunications and informatics. Currently, he is pursuing his PhD research on traffic-aware UAV placement for aerial wireless networks, using artificial intelligence techniques. Additionally, he is an active contributor of the network simulator ns-3 open-source project.',
           social: [
             {
