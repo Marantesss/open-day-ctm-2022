@@ -129,9 +129,13 @@
                 <PinIcon />
                 <span v-text="place"></span>
               </div>
-              <div v-if="zoom" class="flex pt-2 gap-1 text-gray-400">
+              <div v-if="zoom" class="flex pt-2 gap-1 hover:underline text-gray-400">
                 <ZoomIcon />
                 <span v-text="'TBD'"></span>
+              </div>
+              <div v-if="document" class="flex pt-2 gap-1 hover:underline">
+                <DocumentIcon />
+                <a :href="`/documents/${document}`" target="_blank">Guide</a>
               </div>
             </div>
           </div>
@@ -182,6 +186,7 @@ import TimeIcon from '../icons/TimeIcon'
 import PinIcon from '../icons/PinIcon'
 import CrossIcon from '../icons/CrossIcon'
 import ZoomIcon from '../icons/ZoomIcon'
+import DocumentIcon from '../icons/DocumentIcon'
 
 export default {
   name: 'ProgrammeCard',
@@ -190,6 +195,7 @@ export default {
     PinIcon,
     CrossIcon,
     ZoomIcon,
+    DocumentIcon,
   },
   props: {
     name: {
@@ -218,6 +224,11 @@ export default {
       default: undefined,
     },
     zoom: {
+      type: String,
+      required: false,
+      default: undefined,
+    },
+    document: {
       type: String,
       required: false,
       default: undefined,

@@ -25,6 +25,7 @@
             day,
             place,
             zoom,
+            document,
             speakers,
             type,
             description,
@@ -37,6 +38,7 @@
           :type="type"
           :place="place"
           :zoom="zoom"
+          :document="document"
           :speakers="speakers"
           :description="description"
         />
@@ -49,6 +51,7 @@
             time,
             end,
             day,
+            document,
             place,
             zoom,
             speakers,
@@ -63,6 +66,7 @@
           :type="type"
           :place="place"
           :zoom="zoom"
+          :document="document"
           :speakers="speakers"
           :description="description"
         />
@@ -230,6 +234,7 @@ export default {
             'In this Workshop, the participants will configure a wireless network from scratch, leveraged by the controlled mobility provided by a Robot Dog to offer wireless connectivity on-demand.',
           time: '15:00',
           end: '17:00',
+          document: 'on-demand-6g-networks-using-autonomous-platforms.pdf',
           day: 'March 31st',
           type: 'workshop',
           place: 'I-105',
@@ -239,8 +244,8 @@ export default {
               photo: 'andre-coelho.png',
             },
             {
-              name: 'Eduardo Almeira',
-              photo: 'blank-user.jpg',
+              name: 'Eduardo N. Almeida',
+              photo: 'eduardo-almeida.jpg',
             },
             {
               name: 'Rúben Queirós',
@@ -278,6 +283,7 @@ export default {
           time: '11:00',
           end: '13:00',
           day: 'April 1st',
+          document: 'on-demand-6g-networks-using-autonomous-platforms.pdf',
           type: 'workshop',
           place: 'I-105',
           speakers: [
@@ -286,8 +292,8 @@ export default {
               photo: 'andre-coelho.png',
             },
             {
-              name: 'Eduardo Almeira',
-              photo: 'blank-user.jpg',
+              name: 'Eduardo N. Almeida',
+              photo: 'eduardo-almeida.jpg',
             },
             {
               name: 'Rúben Queirós',
