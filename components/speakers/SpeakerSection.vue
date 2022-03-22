@@ -48,7 +48,7 @@ export default {
         },
         {
           name: 'Rúben Queirós',
-          title: 'Research Assitant @ INESC TEC',
+          title: 'Research Assistant @ INESC TEC',
           img: 'ruben-queiros.jpg',
           bio: 'Rúben Queirós has received the MSc degree in Electrical and Computer Engineering in 2020 and is currently pursuing a PhD in the Doctoral Programme in Electrical and Computer Engineering (PDEEC), both at the Faculty of Engineering of the University of Porto (FEUP). Currently working as a research assistant in Wireless Networks (WiN) group from the Centre of Telecommunications and Multimedia (CTM) at INESC TEC, his main research interests include Wi-Fi Link Adaptation, Deep Reinforcement Learning.',
           social: [
@@ -60,7 +60,7 @@ export default {
         },
         {
           name: 'João Loureiro',
-          title: 'Research Assitant @ INESC TEC',
+          title: 'Research Assistant @ INESC TEC',
           img: 'joao-loureiro.jpg',
           bio: 'João Pedro Loureiro received a MSc degree in Electrical and Computer Engineering from the University of Porto (FEUP). He is currently pursuing a PhD in Electrical and Computer Engineering and working as a Researcher in the Wireless Networks research group (WiN) from the Centre for Telecommunications and Multimedia (CTM) at INESC TEC. His research interests include underwater communications and multimodal wireless networks.',
           social: [

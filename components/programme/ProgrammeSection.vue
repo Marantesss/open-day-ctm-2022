@@ -119,8 +119,8 @@ export default {
           title: 'How to Set Up a Hidden Private Wireless Network?',
           workshop: 'On-demand 6G Networks using Autonomous Platforms',
           description: [
-            'Keep your neighbors and passersby away from your wireless network! You and your team will be challenged to set up a hidden private wireless network in your home, able to provide Internet access to residents without anyone else knowing it is there.',
-            'The fastest team to prove its feat will receive a prize. Secret for now!',
+            'Keep your neighbors and passersby away from your wireless network! You will be challenged to set up a hidden private wireless network in your home, able to provide Internet access to residents without anyone else knowing it is there.',
+            'The fastest contestant to prove the feat will receive a prize. Secret for now!',
           ],
           document: '/wireless-networks-challenge.pdf',
         },
@@ -218,6 +218,7 @@ export default {
           end: '17:00',
           description:
             'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
+          document: 'creative-music-workshop.pdf',
           day: 'March 31st',
           type: 'workshop',
           place: 'Auditório A',
@@ -379,6 +380,7 @@ export default {
           time: '17:00',
           end: '15:00',
           day: 'April 1st',
+          document: 'creative-music-workshop.pdf',
           type: 'workshop',
           place: 'Auditório B',
           speakers: [
