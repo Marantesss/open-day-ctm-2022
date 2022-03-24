@@ -151,6 +151,7 @@ export default {
           time: '11:00',
           end: '13:00',
           day: 'March 31st',
+          document: 'computer-vision-workshop.pdf',
           type: 'workshop',
           place: 'Auditório A',
           speakers: [
@@ -313,6 +314,7 @@ export default {
           time: '11:00',
           end: '13:00',
           day: 'April 1st',
+          document: 'computer-vision-workshop.pdf',
           type: 'workshop',
           place: 'Auditório B',
           speakers: [
