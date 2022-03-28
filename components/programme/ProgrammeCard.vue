@@ -148,12 +148,12 @@
               </div>
               <div
                 v-if="zoom"
-                class="flex pt-2 gap-1 hover:underline text-gray-400"
+                class="flex pt-2 gap-1 underline"
               >
                 <ZoomIcon />
-                <span v-text="'TBD'"></span>
+                <a :href="zoom" target="_blank">Zoom Session</a>
               </div>
-              <div v-if="document" class="flex pt-2 gap-1 hover:underline">
+              <div v-if="document" class="flex pt-2 gap-1 underline">
                 <DocumentIcon />
                 <a :href="`/documents/${document}`" target="_blank">Guide</a>
               </div>
