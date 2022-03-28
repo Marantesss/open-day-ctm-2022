@@ -3,20 +3,34 @@
     <h1 class="text-4xl uppercase mb-4 text-ctm-dark-blue font-section-title">
       /Programme
     </h1>
-    <div class="p-4 bg-red-50 rounded-md">
-      <p class="text-red-600 font-lt">
-        <WarningIcon class="inline-flex" />
-        <span class="font-title">Update:</span> Our four keynote sessions will
-        be <span class="font-title">hybrid</span>, meaning you can physically
-        attend at the indicated room, or via a Zoom link (which we will post on
-        this website the day prior to the event). The workshops are
-        <span class="font-title">in-person only</span>, at the rooms indicated
-        in the programme below.
-      </p>
+    <div class="grid md:grid-cols-2 gap-2 grid-cols-1 items-start">
+      <div class="p-4 bg-green-100 rounded-md">
+        <p class="text-green-700 font-lt">
+          <WarningIcon class="inline-flex" />
+          <span class="font-title">Update:</span> Our four keynote sessions will
+          be <span class="font-title">hybrid</span>, meaning you can physically
+          attend at the indicated room, or via a Zoom link (which we will post
+          on this website the day prior to the event). The workshops are
+          <span class="font-title">in-person only</span>, at the rooms indicated
+          in the programme below.
+        </p>
+      </div>
+      <div class="p-4 bg-red-50 rounded-md">
+        <p class="text-red-600 font-lt">
+          <WarningIcon class="inline-flex" />
+          <span class="font-title">Update:</span> Workshops marked with
+          <span
+            class="font-title inline-flex items-end gap-2 text-ctm-dark-blue"
+            ><WarningIcon class="inline-flex" /> Full</span
+          >
+          have reached their maximum capacity and do not allow any further
+          attendees!
+        </p>
+      </div>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
       <div class="text-center grid grid-cols-1 gap-2 items-start">
-        <h3 class="text-xl text-ctm-dark-blue font-bold">March 31st</h3>
+        <h3 class="text-xl text-ctm-dark-blue font-bold my-2">March 31st</h3>
         <ProgrammeCard
           v-for="{
             name,
@@ -46,7 +60,7 @@
         />
       </div>
       <div class="text-center grid grid-cols-1 gap-2 items-start">
-        <h3 class="text-xl text-ctm-dark-blue font-bold">April 1st</h3>
+        <h3 class="text-xl text-ctm-dark-blue font-bold my-2">April 1st</h3>
         <ProgrammeCard
           v-for="{
             name,
@@ -155,6 +169,7 @@ export default {
           time: '11:00',
           end: '13:00',
           day: 'March 31st',
+          full: true,
           document: 'computer-vision-workshop.pdf',
           type: 'workshop',
           place: 'Auditório A',
@@ -320,7 +335,6 @@ export default {
           day: 'April 1st',
           document: 'computer-vision-workshop.pdf',
           type: 'workshop',
-          full: true,
           place: 'Auditório B',
           speakers: [
             {
