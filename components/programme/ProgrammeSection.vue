@@ -26,6 +26,7 @@
             place,
             zoom,
             document,
+            full,
             speakers,
             type,
             description,
@@ -40,6 +41,7 @@
           :zoom="zoom"
           :document="document"
           :speakers="speakers"
+          :full="full"
           :description="description"
         />
       </div>
@@ -52,6 +54,7 @@
             end,
             day,
             document,
+            full,
             place,
             zoom,
             speakers,
@@ -69,6 +72,7 @@
           :document="document"
           :speakers="speakers"
           :description="description"
+          :full="full"
         />
       </div>
     </div>
@@ -136,7 +140,7 @@ export default {
           description:
             'In this talk we will make a brief journey on how computer vision has evolved in the past 50 years. What makes it difficult for computers to understand images and what is possible today?',
           place: 'B032',
-          zoom: 'https://zoom.us/',
+          zoom: 'https://videoconf-colibri.zoom.us/j/81842360033?pwd=RHN6c1UrOGQ4cENsTjJwVzAxT3Q0dz09',
           speakers: [
             {
               name: 'Luís Teixeira',
@@ -205,7 +209,7 @@ export default {
           day: 'April 1st',
           type: 'keynote',
           place: 'B032',
-          zoom: 'https://zoom.us/',
+          zoom: 'https://videoconf-colibri.zoom.us/j/85905727173?pwd=RVJKN0dwbHFhamRaQm5aZm1zcURvdz09',
           speakers: [
             {
               name: 'Paula Viana',
@@ -270,7 +274,7 @@ export default {
           day: 'April 1st',
           type: 'keynote',
           place: 'B032',
-          zoom: 'https://zoom.us/',
+          zoom: 'https://videoconf-colibri.zoom.us/j/87673925052?pwd=WDd0V05TWlZpanE5eWMwM0E0N3BTZz09',
           speakers: [
             {
               name: 'Manuel Ricardo',
@@ -316,6 +320,7 @@ export default {
           day: 'April 1st',
           document: 'computer-vision-workshop.pdf',
           type: 'workshop',
+          full: true,
           place: 'Auditório B',
           speakers: [
             {
@@ -347,7 +352,7 @@ export default {
           day: 'April 1st',
           type: 'keynote',
           place: 'B032',
-          zoom: 'https://zoom.us/',
+          zoom: 'https://videoconf-colibri.zoom.us/j/89509971508?pwd=WkdIVXhVcEhGNkd3dGxZSktkemgvUT09',
           speakers: [
             {
               name: 'Luís Pessoa',

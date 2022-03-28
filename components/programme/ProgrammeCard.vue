@@ -28,6 +28,7 @@
         text-ctm-dark-blue
         transform
         duration-150
+        relative
       "
       @click="toggleModal"
       :class="{
@@ -36,6 +37,22 @@
         'bg-white border-2 border-ctm-dark-blue': type === 'break',
       }"
     >
+      <span
+        class="
+          absolute
+          bottom-0
+          right-0
+          m-2
+          font-title
+          flex
+          items-center
+          gap-2
+        "
+        v-if="full"
+      >
+        <WarningIcon class="inline-flex" />
+        Full
+      </span>
       <div class="flex justify-between">
         <div class="flex-grow">
           <h2 class="text-lg">
@@ -129,7 +146,10 @@
                 <PinIcon />
                 <span v-text="place"></span>
               </div>
-              <div v-if="zoom" class="flex pt-2 gap-1 hover:underline text-gray-400">
+              <div
+                v-if="zoom"
+                class="flex pt-2 gap-1 hover:underline text-gray-400"
+              >
                 <ZoomIcon />
                 <span v-text="'TBD'"></span>
               </div>
@@ -175,6 +195,26 @@
               <span class="font-lt text-sm" v-text="name"></span>
             </div>
           </div>
+
+          <div
+            v-if="full"
+            class="
+              flex flex-col
+              p-6
+              space-y-2
+              rounded-b
+              border-t border-gray-200
+              dark:border-gray-600
+            "
+          >
+            <div class="p-4 bg-red-50 rounded-md">
+              <p class="text-red-600 font-lt">
+                <WarningIcon class="inline-flex" />
+                This workshop has reached its max participant capacity. You can
+                still register for other workshops!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -187,6 +227,7 @@ import PinIcon from '../icons/PinIcon'
 import CrossIcon from '../icons/CrossIcon'
 import ZoomIcon from '../icons/ZoomIcon'
 import DocumentIcon from '../icons/DocumentIcon'
+import WarningIcon from '../icons/WarningIcon'
 
 export default {
   name: 'ProgrammeCard',
@@ -196,6 +237,7 @@ export default {
     CrossIcon,
     ZoomIcon,
     DocumentIcon,
+    WarningIcon,
   },
   props: {
     name: {
@@ -213,6 +255,10 @@ export default {
     type: {
       type: String,
       required: false,
+    },
+    full: {
+      type: Boolean,
+      requried: false,
     },
     day: {
       type: String,
