@@ -3,10 +3,19 @@
     <h1 class="text-4xl uppercase mb-4 text-ctm-dark-blue font-section-title">
       /Programme
     </h1>
-    <div class="grid md:grid-cols-2 gap-2 grid-cols-1 items-start">
-      <div class="p-4 bg-green-100 rounded-md">
+    <div class="grid gap-2 grid-cols-1 items-start">
+      <div class="p-4 bg-blue-100 rounded-md">
+        <p class="text-blue-700 font-lt">
+          <InfoIcon class="inline-flex" />
+          <span class="font-title">Info:</span> Check-in starts
+          <span class="font-title">15 minutes</span> prior to the first keynote
+          talk of each day (at room <span class="font-title">B032</span> at the
+          Faculty of Engineering, check the venue map)
+        </p>
+      </div>
+      <div class="p-4 bg-green-50 rounded-md">
         <p class="text-green-700 font-lt">
-          <WarningIcon class="inline-flex" />
+          <InfoIcon class="inline-flex" />
           <span class="font-title">Update:</span> Our four keynote sessions will
           be <span class="font-title">hybrid</span>, meaning you can physically
           attend at the indicated room, or via a Zoom link (which we will post
@@ -18,7 +27,7 @@
       <div class="p-4 bg-red-50 rounded-md">
         <p class="text-red-600 font-lt">
           <WarningIcon class="inline-flex" />
-          <span class="font-title">Update:</span> Workshops marked with
+          <span class="font-title">Warning:</span> Workshops marked with
           <span
             class="font-title inline-flex items-end gap-2 text-ctm-dark-blue"
             ><WarningIcon class="inline-flex" /> Full</span
@@ -114,13 +123,21 @@
 </template>
 
 <script>
+import InfoIcon from '../icons/InfoIcon.vue'
 import WarningIcon from '../icons/WarningIcon'
 import ChallengeCard from './ChallengeCard'
 import ProgrammeCard from './ProgrammeCard'
 
 export default {
   name: 'ProgrammeSection',
-  components: { ProgrammeCard, ChallengeCard, WarningIcon },
+
+  components: {
+    ProgrammeCard,
+    ChallengeCard,
+    WarningIcon,
+    InfoIcon,
+  },
+
   data() {
     return {
       // Challenges
