@@ -350,6 +350,7 @@ export default {
           time: '11:00',
           end: '13:00',
           day: 'April 1st',
+          full: true,
           document: 'computer-vision-workshop.pdf',
           type: 'workshop',
           place: 'Auditório B',

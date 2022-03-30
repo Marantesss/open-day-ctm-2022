@@ -64,27 +64,26 @@
           >
             Learn from Experts
           </h2>
-          <a :href="registrationLink" target="_blank" class="block text-center">
-            <button
-              class="
-                bg-black
-                border-2 border-black
-                text-white
-                rounded-full
-                text-2xl
-                py-2
-                px-4
-                hover:text-ctm-dark-blue
-                hover:bg-white
-                hover:border-ctm-dark-blue
-                transform
-                transition-all
-                duration-200
-              "
-            >
-              Register Here
-            </button>
-          </a>
+          <button
+            class="
+              cursor-not-allowed
+              mx-auto
+              block
+              bg-black
+              border-2 border-black
+              text-white
+              rounded-full
+              text-2xl
+              py-2
+              px-4
+              transform
+              transition-all
+              duration-200
+            "
+            disabled
+          >
+            Regsitration Closed
+          </button>
         </div>
       </div>
     </header>
@@ -107,7 +106,7 @@ export default {
     return {
       registrationLink: 'https://forms.gle/gD84wUa2otx8tMX96',
     }
-  }
+  },
 }
 </script>
 
