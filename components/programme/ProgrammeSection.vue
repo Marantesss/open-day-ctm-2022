@@ -441,8 +441,8 @@ export default {
           name: 'Creative Music Workshop',
           description:
             'In the Creative Music Workshop, we will explore the area of creative music information retrieval, namely the fundamentals and applied knowledge that supports computer-assisted technology for musical audio recombination. The principles are fundamental to Dj software tools that explore large sets of musical audio databases.',
-          time: '17:00',
-          end: '15:00',
+          time: '15:00',
+          end: '17:00',
           day: 'April 1st',
           document: 'creative-music-workshop.pdf',
           type: 'workshop',
