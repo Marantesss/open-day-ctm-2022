@@ -119,6 +119,19 @@
         :workshop="workshop"
       />
     </div>
+    <div class="my-2">
+      <p class="text-ctm-dark-blue text-center">
+        Challenge prizes will be sponsored by telecommunication company
+        <a href="https://wavecom.pt/" target="_blank" class="underline"
+          >Wavecom - Soluções Rádio SA</a
+        >, from Aveiro, Portugal
+      </p>
+      <div class="mx-auto flex justify-center">
+        <a href="https://wavecom.pt/" target="_blank">
+          <img class="w-44" src="/images/sponsors/wavecom.png" />
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
