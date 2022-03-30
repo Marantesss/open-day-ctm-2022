@@ -13,6 +13,15 @@
           Faculty of Engineering, check the venue map)
         </p>
       </div>
+      <div class="p-4 bg-blue-100 rounded-md">
+        <p class="text-blue-700 font-lt">
+          <InfoIcon class="inline-flex" />
+          <span class="font-title">Info:</span> Click on the workshop cards in
+          the following programme for more information, such as
+          <span class="font-title">preperation guides</span> and
+          <span class="font-title">Zoom rooms</span>!
+        </p>
+      </div>
       <div class="p-4 bg-green-50 rounded-md">
         <p class="text-green-700 font-lt">
           <InfoIcon class="inline-flex" />
@@ -164,13 +173,13 @@ export default {
           document: '/computer-vision-challenge.pdf',
         },
         {
-          title: 'How to Set Up a Hidden Private Wireless Network?',
+          title: 'Set Up Your Own Hidden Private Wireless Network',
           workshop: 'On-demand 6G Networks using Autonomous Platforms',
           description: [
             'Keep your neighbors and passersby away from your wireless network! You will be challenged to set up a hidden private wireless network in your home, able to provide Internet access to residents without anyone else knowing it is there.',
             'The fastest contestant to prove the feat will receive a prize. Secret for now!',
           ],
-          document: '/wireless-networks-challenge.pdf',
+          document: '/set-up-your-own-hidden-private-wireless-network.pdf',
         },
       ],
       // DAY 1
