@@ -82,7 +82,7 @@
             "
             disabled
           >
-            Regsitration Closed
+            Registration Closed
           </button>
         </div>
       </div>

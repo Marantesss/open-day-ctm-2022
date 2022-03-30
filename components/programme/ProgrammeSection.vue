@@ -121,11 +121,12 @@
     </h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
       <ChallengeCard
-        v-for="{ title, description, workshop } in challenges"
+        v-for="{ title, description, workshop, document } in challenges"
         :key="title"
         :title="title"
         :description="description"
         :workshop="workshop"
+        :document="document"
       />
     </div>
     <div class="my-2">
@@ -170,7 +171,6 @@ export default {
           description: [
             'Apply what you learned in the Workshops and use Computer Vision algorithms to recognise the characters of a well-known TV-series. Kaggle is waiting for you! Can you go from “Hello World” to “Yellow World”?',
           ],
-          document: '/computer-vision-challenge.pdf',
         },
         {
           title: 'Set Up Your Own Hidden Private Wireless Network',
@@ -179,7 +179,9 @@ export default {
             'Keep your neighbors and passersby away from your wireless network! You will be challenged to set up a hidden private wireless network in your home, able to provide Internet access to residents without anyone else knowing it is there.',
             'The fastest contestant to prove the feat will receive a prize. Secret for now!',
           ],
-          document: '/set-up-your-own-hidden-private-wireless-network.pdf',
+          // TODO: replace during event
+          // document: 'set-up-your-own-hidden-private-wireless-network.pdf',
+          document: '/',
         },
       ],
       // DAY 1
@@ -234,6 +236,7 @@ export default {
           day: 'March 31st',
           description:
             'An introduction to High-Level Synthesis tools as a fast prototyping method for HW accelerators. In this workshop we will start by learning the basics of HLS, explore a real world example to see the kind of decisions a developer might have to make, and finally see that example used on an FPGA.',
+          document: 'the-first-steps-into-hls.pdf',
           type: 'workshop',
           place: 'Auditório B',
           speakers: [

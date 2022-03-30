@@ -7,8 +7,9 @@
     </h4>
     <p v-for="par in description" :key="par" v-text="par"></p>
     <a
+      v-if="document"
       class="flex gap-2 hover:underline my-2 font-lt"
-      :href="document"
+      :href="document === '/' ? document : `/documents/${document}`"
       target="_blank"
     >
       <DocumentIcon />
@@ -38,7 +39,7 @@ export default {
     document: {
       type: String,
       required: false,
-      default: '/',
+      default: null,
     },
     description: {
       type: Array,
