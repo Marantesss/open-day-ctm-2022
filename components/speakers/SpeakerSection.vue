@@ -36,7 +36,7 @@ export default {
       speakers: [
         {
           name: 'Nádia Carvalho',
-          title: 'Research Assitant @ INESC TEC',
+          title: 'Research Assistant @ INESC TEC',
           img: 'nadia-carvalho.jpg',
           bio: 'Nádia Carvalho has received the MSc degree in Informatics and Computer Engineering in 2020 and is currently pursuing a PhD in the Doctoral Programme in Digital Media (PDMD), both at the Faculty of Engineering of the University of Porto (FEUP). She has also received a B.A. in Musical Composition at ESMAE in 2015. Joining these two interests, she is conducting her research in the field of automatic music generation and computational music representations at the Sound and Music Computer Lab (INESC-TEC/FEUP).',
           social: [
