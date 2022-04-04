@@ -38,16 +38,7 @@
       }"
     >
       <span
-        class="
-          absolute
-          bottom-0
-          right-0
-          m-2
-          font-title
-          flex
-          items-center
-          gap-2
-        "
+        class="absolute bottom-0 right-0 m-2 font-title flex items-center gap-2"
         v-if="full"
       >
         <WarningIcon class="inline-flex" />
@@ -146,12 +137,13 @@
                 <PinIcon />
                 <span v-text="place"></span>
               </div>
-              <div
-                v-if="zoom"
-                class="flex pt-2 gap-1 underline"
-              >
+              <div v-if="zoom" class="flex pt-2 gap-1 underline">
                 <ZoomIcon />
                 <a :href="zoom" target="_blank">Zoom Session</a>
+              </div>
+              <div v-if="recording" class="flex pt-2 gap-1 underline">
+                <YoutubeIcon />
+                <a :href="recording" target="_blank">Session Recording</a>
               </div>
               <div v-if="document" class="flex pt-2 gap-1 underline">
                 <DocumentIcon />
@@ -228,6 +220,7 @@ import CrossIcon from '../icons/CrossIcon'
 import ZoomIcon from '../icons/ZoomIcon'
 import DocumentIcon from '../icons/DocumentIcon'
 import WarningIcon from '../icons/WarningIcon'
+import YoutubeIcon from '../icons/YoutubeIcon'
 
 export default {
   name: 'ProgrammeCard',
@@ -238,6 +231,7 @@ export default {
     ZoomIcon,
     DocumentIcon,
     WarningIcon,
+    YoutubeIcon,
   },
   props: {
     name: {
@@ -270,6 +264,11 @@ export default {
       default: undefined,
     },
     zoom: {
+      type: String,
+      required: false,
+      default: undefined,
+    },
+    recording: {
       type: String,
       required: false,
       default: undefined,

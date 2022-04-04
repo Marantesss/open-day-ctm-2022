@@ -13,7 +13,7 @@
       target="_blank"
     >
       <DocumentIcon />
-      Challenge document available soon
+      Challenge document
     </a>
   </div>
 </template>

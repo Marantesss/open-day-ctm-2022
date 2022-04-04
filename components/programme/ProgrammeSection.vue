@@ -57,6 +57,7 @@
             day,
             place,
             zoom,
+            recording,
             document,
             full,
             speakers,
@@ -71,6 +72,7 @@
           :type="type"
           :place="place"
           :zoom="zoom"
+          :recording="recording"
           :document="document"
           :speakers="speakers"
           :full="full"
@@ -89,6 +91,7 @@
             full,
             place,
             zoom,
+            recording,
             speakers,
             type,
             description,
@@ -101,6 +104,7 @@
           :type="type"
           :place="place"
           :zoom="zoom"
+          :recording="recording"
           :document="document"
           :speakers="speakers"
           :description="description"
@@ -171,6 +175,7 @@ export default {
           description: [
             'Apply what you learned in the Workshops and use Computer Vision algorithms to recognise the characters of a well-known TV-series. Kaggle is waiting for you! Can you go from “Hello World” to “Yellow World”?',
           ],
+          // document: 'https://www.kaggle.com/t/651e52235d50e24463bfffa50a3c319f'
         },
         {
           title: 'Set Up Your Own Hidden Private Wireless Network',
@@ -179,9 +184,7 @@ export default {
             'Keep your neighbors and passersby away from your wireless network! You will be challenged to set up a hidden private wireless network in your home, able to provide Internet access to residents without anyone else knowing it is there.',
             'The fastest contestant to prove the feat will receive a prize. Secret for now!',
           ],
-          // TODO: replace during event
-          // document: 'set-up-your-own-hidden-private-wireless-network.pdf',
-          document: '/',
+          document: 'set-up-your-own-hidden-private-wireless-network.pdf',
         },
       ],
       // DAY 1
@@ -196,6 +199,7 @@ export default {
             'In this talk we will make a brief journey on how computer vision has evolved in the past 50 years. What makes it difficult for computers to understand images and what is possible today?',
           place: 'B032',
           zoom: 'https://videoconf-colibri.zoom.us/j/81842360033?pwd=RHN6c1UrOGQ4cENsTjJwVzAxT3Q0dz09',
+          recording: 'https://youtube.com',
           speakers: [
             {
               name: 'Luís Teixeira',
@@ -267,6 +271,7 @@ export default {
           type: 'keynote',
           place: 'B032',
           zoom: 'https://videoconf-colibri.zoom.us/j/85905727173?pwd=RVJKN0dwbHFhamRaQm5aZm1zcURvdz09',
+          recording: 'https://youtube.com',
           speakers: [
             {
               name: 'Paula Viana',
@@ -288,6 +293,10 @@ export default {
             {
               name: 'Gilberto Bernardes',
               photo: 'gilberto-bernardes.jpg',
+            },
+            {
+              name: 'Nádia Carvalho',
+              photo: 'nadia-carvalho.jpg',
             },
           ],
         },
@@ -332,6 +341,7 @@ export default {
           type: 'keynote',
           place: 'B032',
           zoom: 'https://videoconf-colibri.zoom.us/j/87673925052?pwd=WDd0V05TWlZpanE5eWMwM0E0N3BTZz09',
+          recording: 'https://youtube.com',
           speakers: [
             {
               name: 'Manuel Ricardo',
@@ -410,6 +420,7 @@ export default {
           type: 'keynote',
           place: 'B032',
           zoom: 'https://videoconf-colibri.zoom.us/j/89509971508?pwd=WkdIVXhVcEhGNkd3dGxZSktkemgvUT09',
+          recording: 'https://youtube.com',
           speakers: [
             {
               name: 'Luís Pessoa',
@@ -425,6 +436,7 @@ export default {
           end: '17:00',
           day: 'April 1st',
           type: 'workshop',
+          document: 'antenna-array-workshop.pdf',
           place: 'Auditório A',
           speakers: [
             {
@@ -451,6 +463,10 @@ export default {
             {
               name: 'Gilberto Bernardes',
               photo: 'gilberto-bernardes.jpg',
+            },
+            {
+              name: 'Nádia Carvalho',
+              photo: 'nadia-carvalho.jpg',
             },
           ],
         },
